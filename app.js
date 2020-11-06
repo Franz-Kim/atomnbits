@@ -27,7 +27,7 @@ class App {
 
     this.wave.resize(this.stageWidth,this.stageHeight);
   }
-
+  
   animate(t){
     this.ctx.clearRect(0,0,this.stageWidth,this.stageHeight);
     requestAnimationFrame(this.animate.bline(this));
@@ -35,12 +35,9 @@ class App {
     this.wave.draw(this.ctx);
 
   }
-  window.onload = () =>{
-    new App();
-  }
-
-
-
-
 
 }
+
+window.onload =() =>{
+  new App();
+};
