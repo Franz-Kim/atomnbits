@@ -1,10 +1,10 @@
-const FRICTION = 0.98; //기본 0.98
-const MOVE_SPEED = 0.75; //기본 0.88
+const FRICTION = 0.8; //기본 0.98
+const MOVE_SPEED = 0.7; //기본 0.88
 
 export class Particle {
     constructor(pos, color) {
         this.color = color;
-        this.maxRadious = Math.random()*(8-2)+2; //최대크기 8 최소크기 2 괜찮았음
+        this.maxRadious = Math.random()*(30-15)+15; //최대크기 8 최소크기 2 괜찮았음
 
         this.savedX =pos.x;
         this.savedY =pos.y;
@@ -23,7 +23,7 @@ export class Particle {
 
     draw(ctx){
 
-        if(this.progress<100){
+        if(this.progress<250){
             this.vr += (this.maxRadious - this.radius)/this.fpsTime;
             this.vr *= MOVE_SPEED;
         }else{

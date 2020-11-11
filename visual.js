@@ -15,7 +15,7 @@ export class Visual{
     }
 
     show(stageWidth,stageHeight){
-        this.pos = this.text.setText('<a&&b>',15,stageWidth,stageHeight);
+        this.pos = this.text.setText('<a&&b>',20,stageWidth,stageHeight);
         this.posTotal = this.pos.length -1;
     }
 
@@ -43,7 +43,7 @@ export class Visual{
             const minDist = item.radius+this.mouse.radius;
 
             if(dist<minDist){
-                item.progress+=100;
+                item.progress+=300;
             }
 
             item.draw(ctx);
@@ -51,11 +51,14 @@ export class Visual{
     }
 
     getColor(){ 
-        const minHue =150;
-        const maxHue =250;
+        const minHue =20;
+        const maxHue =30;
+        const minLight = 85;
+        const maxLight = 92;
+        const lightness = (maxLight- minLight)*Math.random()+minLight;
         const hue = (maxHue-minHue) * Math.random() + minHue;
-        return hslToHex(hue,70,65);
-        // Hue 150-250, s 70,l 65 괜찮았음
+        return hslToHex(hue,40,lightness);
+        // Hue 205-210, s 63,l 60 괜찮았음
     }
 
     onMove(e){

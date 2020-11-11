@@ -11,7 +11,7 @@ class App{
 
     WebFont.load({
       google: {
-        families: ['Hind:700','Courier Prime:700']
+        families: ['Hind:700','Aldrich']
       },
       fontactive:() =>{
         this.visual = new Visual();
