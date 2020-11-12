@@ -11,8 +11,8 @@ export class Particle {
         let maxsize = 30;
         let minsize =15;
         if (mql.matches) { //mobile
-            maxsize = 6;
-            minsize = 3;
+            maxsize = 5;
+            minsize = 2;
         } else { //desktop
             maxsize = 30;
             minsize = 15;
