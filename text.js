@@ -20,8 +20,8 @@ export class Text {
         let fontSize = 400;
         //mobile check
         if (mql.matches) { //mobile
-            fontWidth =250;
-            fontSize = 150;
+            fontWidth =300;
+            fontSize = 180;
         } else { //desktop
             fontWidth = 500;
             fontSize = 400;
