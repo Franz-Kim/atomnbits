@@ -12,10 +12,21 @@ export class Text {
     setText(str, density, stageWidth, stageHeight) {
         this.canvas.width = stageWidth;
         this.canvas.height = stageHeight;
+        
+        var mql = window.matchMedia("screen and (max-width: 768px)");
 
         const myText = str;
-        const fontWidth = 500;
-        const fontSize = 400;
+        let fontWidth = 500;
+        let fontSize = 400;
+        //mobile check
+        if (mql.matches) { //mobile
+            fontWidth = 200;
+            fontSize = 100;
+        } else { //desktop
+            fontWidth = 500;
+            fontSize = 400;
+        }
+        //mobilecheck end
         const fontName = 'Aldrich';
 
         this.ctx.clearRect(0, 0, stageWidth, stageHeight);

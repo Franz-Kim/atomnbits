@@ -15,7 +15,20 @@ export class Visual{
     }
 
     show(stageWidth,stageHeight){
-        this.pos = this.text.setText('<a&&b>',20,stageWidth,stageHeight);
+
+        //mobile check
+        var mql = window.matchMedia("screen and (max-width: 768px)");
+        let densityvalue = 20;
+        if (mql.matches) { //mobile
+            densityvalue = 4;
+        } else { //desktop
+            densityvalue = 20;
+        }
+        //mobile check end
+
+
+
+        this.pos = this.text.setText('<a&&b>',densityvalue,stageWidth,stageHeight);
         this.posTotal = this.pos.length -1;
     }
 

@@ -2,9 +2,25 @@ const FRICTION = 0.8; //기본 0.98
 const MOVE_SPEED = 0.7; //기본 0.88
 
 export class Particle {
+
     constructor(pos, color) {
+
+        //mobile check
+
+        var mql = window.matchMedia("screen and (max-width: 768px)");
+        let maxsize = 30;
+        let minsize =15;
+        if (mql.matches) { //mobile
+            maxsize = 5;
+            minsize = 2;
+        } else { //desktop
+            maxsize = 30;
+            minsize = 15;
+        }
+        //mobile check end
+
         this.color = color;
-        this.maxRadious = Math.random()*(30-15)+15; //최대크기 8 최소크기 2 괜찮았음
+        this.maxRadious = Math.random()*(maxsize-minsize)+minsize; //최대크기 8 최소크기 2 괜찮았음
 
         this.savedX =pos.x;
         this.savedY =pos.y;
