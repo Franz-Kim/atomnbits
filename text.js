@@ -20,8 +20,8 @@ export class Text {
         let fontSize = 400;
         //mobile check
         if (mql.matches) { //mobile
-            fontWidth =300;
-            fontSize = 200;
+            fontWidth =200;
+            fontSize = 100;
         } else { //desktop
             fontWidth = 500;
             fontSize = 400;
@@ -34,16 +34,21 @@ export class Text {
         this.ctx.fillStyle = "rgba(0,0,0,0.01)";
         this.ctx.textBaseline = "middle";
         const fontPos = this.ctx.measureText(myText);
-  /*      
+        /*      
                 this.ctx.fillText(myText,
                     (stageWidth- fontPos.width)/2,
                     fontPos.actualBoundingBoxAscent+fontPos.actualBoundingBoxDescent+((stageHeight-fontSize)/2)
                 );
-*/
-                this.ctx.fillText(myText,
-                    (stageWidth- fontPos.width)/2,(stageHeight)/2
-                );
-   
+        */
+        this.ctx.fillText(myText,
+            (stageWidth - fontPos.width) / 2, (stageHeight) / 2
+        );
+
+        this.ctx.beginPath();
+        this.ctx.lineWidth = "40";
+        this.ctx.strokeStyle = "white";
+        this.ctx.rect(50, 50, 150, 80);
+        this.ctx.stroke();
         
      /*   this.ctx.fillText("atom",
             (stageWidth - this.ctx.measureText('atom').width) / 2, stageHeight/5);
