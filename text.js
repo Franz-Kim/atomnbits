@@ -20,8 +20,8 @@ export class Text {
         let fontSize = 400;
         //mobile check
         if (mql.matches) { //mobile
-            fontWidth =200;
-            fontSize = 100;
+            fontWidth =150;
+            fontSize = 80;
         } else { //desktop
             fontWidth = 500;
             fontSize = 400;
@@ -43,13 +43,6 @@ export class Text {
         this.ctx.fillText(myText,
             (stageWidth - fontPos.width) / 2, (stageHeight) / 2
         );
-
-        this.ctx.beginPath();
-        this.ctx.lineWidth = "2";
-        this.ctx.strokeStyle = "white";
-        this.ctx.rect(50, 50, 150, 80);
-        this.ctx.stroke();
-        
      /*   this.ctx.fillText("atom",
             (stageWidth - this.ctx.measureText('atom').width) / 2, stageHeight/5);
         this.ctx.fillText('&',
