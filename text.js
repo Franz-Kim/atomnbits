@@ -21,7 +21,7 @@ export class Text {
         //mobile check
         if (mql.matches) { //mobile
             fontWidth =300;
-            fontSize = 180;
+            fontSize = 200;
         } else { //desktop
             fontWidth = 500;
             fontSize = 400;
@@ -34,8 +34,8 @@ export class Text {
         this.ctx.fillStyle = "rgba(0,0,0,0.01)";
         this.ctx.textBaseline = "middle";
         const fontPos = this.ctx.measureText(myText);
-        
-   /*             this.ctx.fillText(myText,
+  /*      
+                this.ctx.fillText(myText,
                     (stageWidth- fontPos.width)/2,
                     fontPos.actualBoundingBoxAscent+fontPos.actualBoundingBoxDescent+((stageHeight-fontSize)/2)
                 );
