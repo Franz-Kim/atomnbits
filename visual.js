@@ -20,7 +20,7 @@ export class Visual{
         var mql = window.matchMedia("screen and (max-width: 768px)");
         let densityvalue = 20;
         if (mql.matches) { //mobile
-            densityvalue = 2;
+            densityvalue = 1;
         } else { //desktop
             densityvalue = 20;
         }
