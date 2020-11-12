@@ -45,7 +45,7 @@ export class Text {
         );
 
         this.ctx.beginPath();
-        this.ctx.lineWidth = "40";
+        this.ctx.lineWidth = "5";
         this.ctx.strokeStyle = "white";
         this.ctx.rect(50, 50, 150, 80);
         this.ctx.stroke();
