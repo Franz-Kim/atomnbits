@@ -105,3 +105,18 @@ html{
     margin-left: -50%;
     height: 100%;
 }
+.secondvideo-container{
+    position: absolute;
+    top: 0;
+    left:33.3333%;
+    width: 33.3333%;
+    overflow:hidden;
+    display:block;
+    height: 100%;
+    z-index: 1;
+}
+.secondvideo{
+    margin-left: -100%;
+    height: 100%;
+
+}
