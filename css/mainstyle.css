@@ -1,0 +1,90 @@
+html{
+    font-size: 10px;
+}
+
+
+/*about us css*/
+.headbar {
+
+    position: absolute;
+    top: 15%;
+    margin: auto;
+    left: 0;
+    right: 0;
+    width: 1200px;
+    text-align: left;
+
+    color: #808080;
+
+    font-family: Aldrich;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 2rem;
+}
+.aboutus-title{
+    width: 1200px;
+    left:0;
+    right:0;
+    margin: auto;
+    
+    font-family: Aldrich;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 5rem;
+}
+#aboutus-contents-en{
+    width: 1200px;
+    margin: auto;
+   /* margin-top: 5rem;*/
+    left: 0;right: 0;
+    font-family: Sen;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 3rem;
+    line-height: 45px;
+    
+}
+#aboutus-contents-kr{
+    width: 1200px;
+    margin: auto;
+    margin-top: 5rem;
+    left: 0;right: 0;
+    font-family: Noto Sans KR;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 3rem;
+    line-height: 45px;    
+}
+.aboutus-contents{
+    opacity: 0;
+    color: transparent;
+}
+
+
+
+/*keywords css*/
+.keywords {
+    font-family: Aldrich;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 5rem;
+    text-align: center;
+
+  }
+.keywords .letters {
+    position: absolute;
+    top:45%;
+    opacity: 0;
+    color: transparent;
+}
+  .keywords .letters-1{
+    left:10%;
+}
+.keywords .letters-2{
+    position: absolute;
+    left:40%;
+}
+.keywords .letters-3{
+    position: absolute;
+    left:70%;
+}
