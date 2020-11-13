@@ -26,6 +26,7 @@ var myFullpage = new fullpage('#fullpage', {
     }
 });
 
+
 //aboutus
 var aboutus_in_animation = anime({ //destination index1, aboutus in 애니메이션
     targets: '.aboutus-contents',
@@ -44,8 +45,6 @@ var aboutus_out_animation = anime({ //destination index1, aboutus out 애니메�
     autoplay: false,
     delay: anime.stagger(50)
 });
-
-
 
 
 

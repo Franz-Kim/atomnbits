@@ -76,9 +76,11 @@ html{
     top:45%;
     opacity: 0;
     color: transparent;
+    z-index: 2;
 }
   .keywords .letters-1{
     left:10%;
+
 }
 .keywords .letters-2{
     position: absolute;
@@ -87,4 +89,19 @@ html{
 .keywords .letters-3{
     position: absolute;
     left:70%;
+}
+/*keyword video*/
+
+.firstvideo-container{
+    position: absolute;
+    top: 0;
+    width: 33.3333%;
+    overflow:hidden;
+    display:block;
+    height: 100%;
+    z-index: 1;
+}
+.firstvideo {
+    margin-left: -50%;
+    height: 100%;
 }
