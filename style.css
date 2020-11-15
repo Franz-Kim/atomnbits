@@ -38,6 +38,6 @@ canvas{
   background-color: #F0EBDB;
   position: absolute;
   left:0;
-  top:100vh;
+  top:100%;
   z-index: 1000;
 }
