@@ -46,6 +46,14 @@ var aboutus_out_animation = anime({ //destination index1, aboutus out 애니메�
     delay: anime.stagger(50)
 });
 
+//video
+var video_in_animation = anime({ 
+  targets: '.video-container',
+  scale:[0.2,1],
+  opacity: [0,1],
+  duration: 500,
+  delay: anime.stagger(500)
+});
 
 
 //keywords
@@ -99,3 +107,4 @@ var keywords_in_animation = anime.timeline({loop: false})
     duration: ml4.durationOut,
     easing: "easeInExpo",
   });
+

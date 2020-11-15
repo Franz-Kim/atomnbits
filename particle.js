@@ -1,5 +1,5 @@
 const FRICTION = 0.8; //기본 0.98
-const MOVE_SPEED = 0.7; //기본 0.88
+const MOVE_SPEED = 0.75; //기본 0.88
 
 export class Particle {
 
@@ -39,7 +39,7 @@ export class Particle {
 
     draw(ctx){
 
-        if(this.progress<250){
+        if(this.progress<130){
             this.vr += (this.maxRadious - this.radius)/this.fpsTime;
             this.vr *= MOVE_SPEED;
         }else{

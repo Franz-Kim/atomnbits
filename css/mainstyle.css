@@ -91,8 +91,12 @@ html{
     left:70%;
 }
 /*keyword video*/
+.video-container{
+    
 
-.firstvideo-container{
+}
+
+#firstvideo-container{
     position: absolute;
     top: 0;
     width: 33.3333%;
@@ -101,11 +105,11 @@ html{
     height: 100%;
     z-index: 1;
 }
-.firstvideo {
+#firstvideo {
     margin-left: -50%;
     height: 100%;
 }
-.secondvideo-container{
+#secondvideo-container{
     position: absolute;
     top: 0;
     left:33.3333%;
@@ -115,7 +119,7 @@ html{
     height: 100%;
     z-index: 1;
 }
-.secondvideo{
+#secondvideo{
     margin-left: -100%;
     height: 100%;
 

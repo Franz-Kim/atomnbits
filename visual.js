@@ -33,6 +33,7 @@ export class Visual{
     }
 
     animate(ctx){
+//        console.log(this.particles.length);
        
         if(!this.pos){
             return;
