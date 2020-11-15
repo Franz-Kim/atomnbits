@@ -5,7 +5,7 @@ var myFullpage = new fullpage('#fullpage', {
     anchors: ['firstPage', 'secondPage', '3rdPage'],
     navigation: true,
     navigationPosition: 'right',
-    navigationTooltips: ['First page', 'Second page', 'Third and last page'],
+    navigationTooltips: ['what we do', 'atom&bits', 'about us','contact'],
     afterLoad: function (origin, destination, direction) {
         if (destination.index == 0 && loading_finished == 1) {
             keywords_in_animation.play(); //0번페이지 로딩 (keywords)
@@ -49,10 +49,11 @@ var aboutus_out_animation = anime({ //destination index1, aboutus out 애니메�
 //video
 var video_in_animation = anime({ 
   targets: '.video-container',
-  scale:[0.2,1],
+  translateY:[100,0],
+  easing:'easeInQuad',
   opacity: [0,1],
   duration: 500,
-  delay: anime.stagger(500)
+  delay: anime.stagger(200)
 });
 
 
