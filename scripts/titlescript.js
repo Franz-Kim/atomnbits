@@ -1,6 +1,6 @@
 var startbuttone = document.querySelector('.startbutton');
 const mouseClickAnimation =()=>{
-   /* anime({
+    anime({
         targets: '.square',
        // translateY : -document.documentElement.clientHeight,
        translateY:-window.innerHeight,
@@ -8,10 +8,10 @@ const mouseClickAnimation =()=>{
         loop: false,
         duration: 1000
     });
-*/
-    //setTimeout(function () {
+
+    setTimeout(function () {
        window.location.href = "main.html";
-    // }, 0);
+     }, 1100);
     
 }
 

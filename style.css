@@ -13,7 +13,8 @@ html{
 body{
   width: 100%;
   height: 100%;
-  background-color: #1b138d;
+/*  background-color: #1b138d;*/
+  background: #0A3CD1;
   touch-action: none;
   overflow: hidden;
 }
@@ -61,7 +62,7 @@ canvas{
   text-decoration: none;
   border: 1px solid white;
 }
-/*
+
 .square {
   height: 100%;
   width: 100%;
@@ -71,7 +72,7 @@ canvas{
   top:100%;
   z-index: 1000;
 }
-*/
+
 @media (max-width: 768px) {
   html {
       font-size: 6px;

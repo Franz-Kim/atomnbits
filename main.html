@@ -20,28 +20,29 @@
 
             <div class="videowrapper">
                 <div id="firstvideo-container" class="video-container">
-                    <video autoplay="autoplay" playsinline="" muted="" loop="loop" id="firstvideo" data-keepplaying=""
-                        data-autoplay="">
+                    <video playsinline="" muted="" loop="loop" id="firstvideo" >
                         <source src="https://vliveplus.pstatic.net/0/campaign/2020/11/naverwithsme/v2/sy_intro.mp4"
                             type="video/mp4" class="video_pc">
                         <source
                             src="https://vliveplus.pstatic.net/0/campaign/2020/11/naverwithsme/v2/sy_intro_mobile.mp4"
                             type="video/mp4" class="video_mo">
                     </video>
+                    <div class="videocover firstvideocover"></div>
                 </div>
                 <div id="secondvideo-container" class="video-container">
-                    <video autoplay="autoplay" playsinline="" muted="" loop="loop" id="secondvideo" data-keepplaying=""
-                        data-autoplay="">
+                   <!-- <video autoplay="autoplay" playsinline="" muted="" loop="loop" id="secondvideo" data-keepplaying=""
+                        data-autoplay="">   -->
+                        <video playsinline="" muted="" loop="loop" id="secondvideo">
                         <source src="/resources/vertical_interactive_resized.mp4"
                         type="video/mp4" class="video_pc">
-
                     </video>
+                    <div class="videocover secondvideocover"></div>
                 </div>
                 <div id="thirdvideo-container" class="video-container">
-                    <video autoplay="autoplay" playsinline="" muted="" loop="loop" id="thirdvideo" data-keepplaying=""
-                        data-autoplay="">
+                    <video playsinline="" muted="" loop="loop" id="thirdvideo">
                         <source src="/resources/vertical_blossom2_resized.mp4" type="video/mp4" class="video_pc">
                     </video>
+                    <div class="videocover thirdvideocover"></div>
                 </div>
             </div>
 
@@ -54,6 +55,11 @@
                 <div class="letter-wrapper wrapper3"><span class="letters letters-3">/*Immersive*/</span>
                 </div>
             </h1>
+            <div>
+                <div id="firstvideo-container" class="videoover firstvideo-over"></div>
+                <div id="secondvideo-container" class="videoover secondvideo-over"></div>
+                <div id="thirdvideo-container" class="videoover thirdvideo-over"></div>
+            </div>
 
         </div>
         
