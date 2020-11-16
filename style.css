@@ -28,7 +28,7 @@ canvas{
   font-weight: normal;
   font-size: 4rem;
 
-  color: white;
+  color: #E4F87A;
   position: absolute;
   margin: auto;
   text-align: center;
@@ -53,13 +53,13 @@ canvas{
   font-size: 4rem;
   padding:1rem;
 
-  color: white;
+  color: #E4F87A;
   margin: auto;
   text-align: center;
   left:0;
   right:0;
   text-decoration: none;
-  border: 1px solid white;
+  border: 1px solid #E4F87A;;
 }
 
 .square {

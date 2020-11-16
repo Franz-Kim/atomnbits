@@ -72,7 +72,7 @@ export class Visual{
         const lightness = (maxLight- minLight)*Math.random()+minLight;
         const hue = (maxHue-minHue) * Math.random() + minHue;
         return hslToHex(hue,40,lightness);
-        // Hue 205-210, s 63,l 60 괜찮았음
+        // Hue 205-210, s 63,l 60 괜찮았음   형광색: background: 70,90,73,1;;
     }
 
     onMove(e){
