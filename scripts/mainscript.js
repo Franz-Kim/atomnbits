@@ -49,8 +49,8 @@ var aboutus_out_animation = anime({ //destination index1, aboutus out 애니메�
 //video
 var video_in_animation = anime({ 
   targets: '.video-container',
-  translateY:[100,0],
-  easing:'easeInQuad',
+  //scale:[0.2,1],
+  translateX:[100,0],
   opacity: [0,1],
   duration: 500,
   delay: anime.stagger(200)
