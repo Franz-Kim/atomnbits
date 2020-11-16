@@ -38,8 +38,8 @@ export class Text {
             const fontPos = this.ctx.measureText(myText);    
                     this.ctx.fillText("<atom>",
             (stageWidth - this.ctx.measureText('<atom>').width) / 2, stageHeight/7*2+fontSize/2);
-        this.ctx.fillText('&',
-            (stageWidth - this.ctx.measureText('&').width) / 2, stageHeight / 7*3+fontSize/2);
+        this.ctx.fillText('&&',
+            (stageWidth - this.ctx.measureText('&&').width) / 2, stageHeight / 7*3+fontSize/2);
         this.ctx.fillText('<bits>',
             (stageWidth - this.ctx.measureText('<bits>').width) / 2, (stageHeight) / 7 *4+fontSize/2);
 
