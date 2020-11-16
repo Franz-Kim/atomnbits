@@ -47,6 +47,7 @@ var aboutus_out_animation = anime({ //destination index1, aboutus out 애니메�
 });
 
 //video
+/*
 var video_in_animation = anime({ 
   targets: '.video-container',
   //scale:[0.2,1],
@@ -55,7 +56,7 @@ var video_in_animation = anime({
   duration: 500,
   delay: anime.stagger(200)
 });
-
+*/
 
 //keywords
 var ml4 = {};
