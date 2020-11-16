@@ -78,7 +78,7 @@ html{
       z-index: 1;
       flex: 1;
   }
-.keywords .letters {
+ .letters {
     opacity: inherit;
     z-index: 2;
     padding: 0;

@@ -69,6 +69,34 @@ ml4.colorin = ['rgba(0,0,0,0)','rgba(0,0,0,1)'];
 ml4.colorout= ['rgba(0,0,0,1)','rgba(0,0,0,0)'];
 //ml4.bcolorin = ['rgba(228,248,122,0)','rgba(228,248,122,1)'];
 //ml4.bcolorout = ['rgba(228,248,122,1)','rgba(228,248,122,0)'];
+
+var keywords_out_animation = anime.timeline({loop: false,autoplay:false}) //사라짐 애니메이션( 이게 위로가야함, 초기셋팅으로 준비하게되는듯)
+.add({
+  targets: '.keywords .wrapper1',
+  opacity: [1,0],
+  scale: ml4.scaleOut,
+  duration: ml4.durationOut,
+//  backgroundColor:ml4.bcolorout,
+  easing: "easeInExpo",
+
+}).add({
+  targets: '.keywords .wrapper2',
+  opacity: [1,0],
+  scale: ml4.scaleOut,
+  duration: ml4.durationOut,
+//  backgroundColor:ml4.bcolorout,
+  easing: "easeInExpo",
+}).add({
+  targets: '.keywords .wrapper3',
+  opacity: [1,0],
+  scale: ml4.scaleOut,
+  duration: ml4.durationOut,
+//  backgroundColor:ml4.bcolorout,
+  easing: "easeInExpo",
+});
+
+
+
 var keywords_in_animation = anime.timeline({loop: false})
   .add({
     targets: '.keywords .wrapper1',
@@ -91,29 +119,5 @@ var keywords_in_animation = anime.timeline({loop: false})
     color:ml4.colorin,
    // backgroundColor:ml4.bcolorin,
     duration: ml4.durationIn
-  });
-  var keywords_out_animation = anime.timeline({loop: false,autoplay:false})
-  .add({
-    targets: '.keywords .wrapper1',
-    opacity: [1,0],
-    scale: ml4.scaleOut,
-    duration: ml4.durationOut,
-  //  backgroundColor:ml4.bcolorout,
-    easing: "easeInExpo",
-
-  }).add({
-    targets: '.keywords .wrapper2',
-    opacity: [1,0],
-    scale: ml4.scaleOut,
-    duration: ml4.durationOut,
-  //  backgroundColor:ml4.bcolorout,
-    easing: "easeInExpo",
-  }).add({
-    targets: '.keywords .wrapper3',
-    opacity: [1,0],
-    scale: ml4.scaleOut,
-    duration: ml4.durationOut,
-  //  backgroundColor:ml4.bcolorout,
-    easing: "easeInExpo",
   });
 
