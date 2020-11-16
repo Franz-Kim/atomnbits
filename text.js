@@ -16,15 +16,15 @@ export class Text {
         var mql = window.matchMedia("screen and (max-width: 768px)");
 
         const myText = str;
-        let fontWidth = 500;
-        let fontSize = 400;
+        let fontWidth = 400;
+        let fontSize = 350;
         //mobile check
         if (mql.matches) { //mobile
             fontWidth =150;
             fontSize = 80;
         } else { //desktop
-            fontWidth = 500;
-            fontSize = 400;
+            fontWidth = 400;
+            fontSize = 350;
         }
         //mobilecheck end
         const fontName = 'Aldrich';
