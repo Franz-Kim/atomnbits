@@ -29,27 +29,37 @@ export class Text {
         //mobilecheck end
         const fontName = 'Aldrich';
 
-        this.ctx.clearRect(0, 0, stageWidth, stageHeight);
-        this.ctx.font = `${fontWidth} ${fontSize}px ${fontName}`;
-        this.ctx.fillStyle = "rgba(0,0,0,1)";
-        this.ctx.textBaseline = "middle";
-        const fontPos = this.ctx.measureText(myText);
-        /*      
-                this.ctx.fillText(myText,
-                    (stageWidth- fontPos.width)/2,
-                    fontPos.actualBoundingBoxAscent+fontPos.actualBoundingBoxDescent+((stageHeight-fontSize)/2)
-                );
-        */
-        this.ctx.fillText(myText,
-            (stageWidth - fontPos.width) / 2, (stageHeight) / 2
-        );
-     /*   this.ctx.fillText("atom",
-            (stageWidth - this.ctx.measureText('atom').width) / 2, stageHeight/5);
+        if(mql.matches){//mobile
+            this.ctx.clearRect(0, 0, stageWidth, stageHeight);
+            this.ctx.font = `${fontWidth} ${fontSize}px ${fontName}`;
+            this.ctx.fillStyle = "rgba(0,0,0,1)";
+            this.ctx.textBaseline = "middle";
+            const fontPos = this.ctx.measureText(myText);    
+                    this.ctx.fillText("<atom>",
+            (stageWidth - this.ctx.measureText('<atom>').width) / 2, stageHeight/5);
         this.ctx.fillText('&',
-            (stageWidth - this.ctx.measureText('&').width) / 2, stageHeight / 2);
-        this.ctx.fillText('bits',
-            (stageWidth - this.ctx.measureText('bits').width) / 2, (stageHeight) / 5 *4);*/
+            (stageWidth - this.ctx.measureText('&').width) / 2, stageHeight / 5*2);
+        this.ctx.fillText('<bits>',
+            (stageWidth - this.ctx.measureText('<bits>').width) / 2, (stageHeight) / 5 *3);
 
+        }else{//desktop
+            this.ctx.clearRect(0, 0, stageWidth, stageHeight);
+            this.ctx.font = `${fontWidth} ${fontSize}px ${fontName}`;
+            this.ctx.fillStyle = "rgba(0,0,0,1)";
+            this.ctx.textBaseline = "middle";
+            const fontPos = this.ctx.measureText(myText);
+            /*      
+                    this.ctx.fillText(myText,
+                        (stageWidth- fontPos.width)/2,
+                        fontPos.actualBoundingBoxAscent+fontPos.actualBoundingBoxDescent+((stageHeight-fontSize)/2)
+                    );
+            */
+            this.ctx.fillText(myText,
+                (stageWidth - fontPos.width) / 2, (stageHeight) / 2
+            );
+    
+
+        }
 
         return this.dotPos(density, stageWidth, stageHeight);
 
