@@ -9,9 +9,9 @@ const mouseClickAnimation =()=>{
         duration: 1000
     });
 */
-    setTimeout(function () {
+    //setTimeout(function () {
        window.location.href = "main.html";
-     }, 0);
+    // }, 0);
     
 }
 
