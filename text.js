@@ -29,9 +29,10 @@ export class Text {
         //mobilecheck end
         const fontName = 'Aldrich';
 
-        if(mql.matches){//mobile
+        if(mql.matches){//mobile 구름표기   
             this.ctx.clearRect(0, 0, stageWidth, stageHeight);
-            this.ctx.font = `${fontWidth} ${fontSize}px ${fontName}`;
+            
+           /* this.ctx.font = `${fontWidth} ${fontSize}px ${fontName}`;
             this.ctx.fillStyle = "rgba(0,0,0,1)";
             this.ctx.textBaseline = "middle";
             const fontPos = this.ctx.measureText(myText);    
@@ -41,8 +42,8 @@ export class Text {
             (stageWidth - this.ctx.measureText('&').width) / 2, stageHeight / 5*2);
         this.ctx.fillText('<bits>',
             (stageWidth - this.ctx.measureText('<bits>').width) / 2, (stageHeight) / 5 *3);
-
-        }else{//desktop
+*/
+        }else{//desktop 구름표기
             this.ctx.clearRect(0, 0, stageWidth, stageHeight);
             this.ctx.font = `${fontWidth} ${fontSize}px ${fontName}`;
             this.ctx.fillStyle = "rgba(0,0,0,1)";

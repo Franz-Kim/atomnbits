@@ -67,45 +67,53 @@ ml4.durationOut = 200;
 ml4.delay = 500;
 ml4.colorin = ['rgba(0,0,0,0)','rgba(0,0,0,1)'];
 ml4.colorout= ['rgba(0,0,0,1)','rgba(0,0,0,0)'];
+//ml4.bcolorin = ['rgba(228,248,122,0)','rgba(228,248,122,1)'];
+//ml4.bcolorout = ['rgba(228,248,122,1)','rgba(228,248,122,0)'];
 var keywords_in_animation = anime.timeline({loop: false})
   .add({
-    targets: '.keywords .letters-1',
+    targets: '.keywords .wrapper1',
     opacity: ml4.opacityIn,
     scale: ml4.scaleIn,
     color:ml4.colorin,
+  //  backgroundColor:ml4.bcolorin,
     duration: ml4.durationIn
   }).add({
-    targets: '.keywords .letters-2',
+    targets: '.keywords .wrapper2',
     opacity: ml4.opacityIn,
     scale: ml4.scaleIn,
     color:ml4.colorin,
+  //  backgroundColor:ml4.bcolorin,
     duration: ml4.durationIn
   }).add({
-    targets: '.keywords .letters-3',
+    targets: '.keywords .wrapper3',
     opacity: ml4.opacityIn,
     scale: ml4.scaleIn,
     color:ml4.colorin,
+   // backgroundColor:ml4.bcolorin,
     duration: ml4.durationIn
   });
   var keywords_out_animation = anime.timeline({loop: false,autoplay:false})
   .add({
-    targets: '.keywords .letters-1',
+    targets: '.keywords .wrapper1',
     opacity: [1,0],
     scale: ml4.scaleOut,
     duration: ml4.durationOut,
+  //  backgroundColor:ml4.bcolorout,
     easing: "easeInExpo",
 
   }).add({
-    targets: '.keywords .letters-2',
+    targets: '.keywords .wrapper2',
     opacity: [1,0],
     scale: ml4.scaleOut,
     duration: ml4.durationOut,
+  //  backgroundColor:ml4.bcolorout,
     easing: "easeInExpo",
   }).add({
-    targets: '.keywords .letters-3',
+    targets: '.keywords .wrapper3',
     opacity: [1,0],
     scale: ml4.scaleOut,
     duration: ml4.durationOut,
+  //  backgroundColor:ml4.bcolorout,
     easing: "easeInExpo",
   });
 

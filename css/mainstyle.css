@@ -64,23 +64,25 @@ html{
 
 /*keywords css*/
 .keywords {
-    font-family: Aldrich;
+    font-family: Sen;
     font-style: normal;
     font-weight: normal;
     font-size: 5rem;
     text-align: center;
     display: flex;
     text-align: center;
- 
+    justify-content: space-around;
+  }
+  .letter-wrapper{
+      opacity: 0;
+      z-index: 1;
+      flex: 1;
   }
 .keywords .letters {
-    opacity: 0;
-    color: transparent;
+    opacity: inherit;
     z-index: 2;
-    flex:1;
-    background-color: rgba(255,255,255,0.25);
-    padding: 3rem 0;
-    color: #F0EBDB;
+    padding: 0;
+    background-color: rgba(228,248,122,1);
 }
 
 /*video*/
@@ -152,7 +154,7 @@ html{
 
     }
 
-    .keywords .letters {
+    .keywords .letter-wrapper {
         flex: 0;
         padding: 2rem 0;
         height: 3rem;
