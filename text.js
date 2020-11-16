@@ -32,17 +32,17 @@ export class Text {
         if(mql.matches){//mobile 구름표기   
             this.ctx.clearRect(0, 0, stageWidth, stageHeight);
             
-           /* this.ctx.font = `${fontWidth} ${fontSize}px ${fontName}`;
+           this.ctx.font = `${fontWidth} ${fontSize}px ${fontName}`;
             this.ctx.fillStyle = "rgba(0,0,0,1)";
             this.ctx.textBaseline = "middle";
             const fontPos = this.ctx.measureText(myText);    
                     this.ctx.fillText("<atom>",
-            (stageWidth - this.ctx.measureText('<atom>').width) / 2, stageHeight/5);
+            (stageWidth - this.ctx.measureText('<atom>').width) / 2, stageHeight/7*2+fontSize/2);
         this.ctx.fillText('&',
-            (stageWidth - this.ctx.measureText('&').width) / 2, stageHeight / 5*2);
+            (stageWidth - this.ctx.measureText('&').width) / 2, stageHeight / 7*3+fontSize/2);
         this.ctx.fillText('<bits>',
-            (stageWidth - this.ctx.measureText('<bits>').width) / 2, (stageHeight) / 5 *3);
-*/
+            (stageWidth - this.ctx.measureText('<bits>').width) / 2, (stageHeight) / 7 *4+fontSize/2);
+
         }else{//desktop 구름표기
             this.ctx.clearRect(0, 0, stageWidth, stageHeight);
             this.ctx.font = `${fontWidth} ${fontSize}px ${fontName}`;
