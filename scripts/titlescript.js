@@ -1,4 +1,4 @@
-//var startbuttone = document.querySelector('.startbutton');
+var startbuttone = document.querySelector('.startbutton');
 const mouseClickAnimation =()=>{
    /* anime({
         targets: '.square',
