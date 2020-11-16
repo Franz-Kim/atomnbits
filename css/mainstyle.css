@@ -41,7 +41,7 @@ html{
     font-style: normal;
     font-weight: normal;
     font-size: 3rem;
-    line-height: 45px;
+    line-height: 4.5rem;
     
 }
 #aboutus-contents-kr{
@@ -53,7 +53,7 @@ html{
     font-style: normal;
     font-weight: 400;
     font-size: 3rem;
-    line-height: 45px;    
+    line-height: 4.5rem;    
 }
 .aboutus-contents{
     opacity: 0;
@@ -141,10 +141,24 @@ html{
 
 @media (max-width: 768px) {
     html {
-        font-size: 14px;
+        font-size: 10px;
     }
 
+    .keywords {
+        font-size: 3rem;
+        flex-direction: column;
+        height: 100%;
+        justify-content: space-around;
 
+    }
+
+    .keywords .letters {
+        flex: 0;
+        padding: 2rem 0;
+        height: 3rem;
+        top:0;
+        bottom: 0;
+    }
     #firstvideo-container {
         position: absolute;
         left: 0;
@@ -159,7 +173,6 @@ html{
         height: 100%;
         width: 100%;
         object-fit: cover;
-    
     }
 
     #secondvideo-container {
@@ -181,6 +194,26 @@ html{
         width: 100%;
         z-index: 1;
     }
+
+
+#aboutus-contents-en{
+    width: auto;
+    margin: 0 6rem;
+   /* margin-top: 5rem;*/
+    font-size: 2rem;
+    line-height: 2.5rem;
+    text-align: justify;
+    
+}
+#aboutus-contents-kr{
+    width: auto;
+    margin: 0 6rem;
+    margin-top: 5rem;
+    font-size: 1.7rem;
+    line-height: 3rem;    
+    text-align: justify;
+
+}
 
 
     /*
