@@ -1,7 +1,7 @@
 
 let loading_finished =0;
 var myFullpage = new fullpage('#fullpage', {
-    sectionsColor: ['#F0EBDB', '#919192', '#E4F87A', '#0A3CD1'],
+    sectionsColor: ['#F0EBDB', '#0A3CD1', '#E4F87A', '#0A3CD1'],
     anchors: ['firstPage', 'secondPage', '3rdPage','4thPage'],
     navigation: true,
     navigationPosition: 'right',

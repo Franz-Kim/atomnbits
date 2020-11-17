@@ -21,8 +21,16 @@ html{
     font-weight: normal;
     font-size: 2rem;
 }
-.aboutus-title{
+.about-us-wrapper{
+    position: absolute;
     width: 1200px;
+    left:0;
+    right:0;
+    top:15%;
+    margin: auto;
+    
+}
+.aboutus-title{
     left:0;
     right:0;
     margin: auto;
@@ -33,7 +41,6 @@ html{
     font-size: 5rem;
 }
 #aboutus-contents-en{
-    width: 1200px;
     margin: auto;
    /* margin-top: 5rem;*/
     left: 0;right: 0;
@@ -42,11 +49,10 @@ html{
     font-weight: normal;
     font-size: 3rem;
     line-height: 4.5rem;
-    color: #E4F87A;
+    color: white;
     
 }
 #aboutus-contents-kr{
-    width: 1200px;
     margin: auto;
     margin-top: 5rem;
     left: 0;right: 0;
@@ -55,15 +61,27 @@ html{
     font-weight: 400;
     font-size: 2.7rem;
     line-height: 4.5rem;    
-    color: #E4F87A;
+    color: white;
 }
 .aboutus-contents{
     opacity: 0;
     color: transparent;
 }
 .aboutus-contents b{
+    font-family: Aldrich;
     color: #00007F;
+    background-color: #E4F87A;
 
+}
+.section2-logo{
+    position: absolute;
+    right: 10rem;
+    bottom: 6rem;
+    font-family: Aldrich;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 10rem;
+    color: #FFFFFF;
 }
 
 
@@ -308,9 +326,15 @@ font-size: 3.7rem;
     }
 
 
+
+    .about-us-wrapper{
+        position: absolute;
+        width: auto;
+        margin: 0 6rem;
+        
+    }
+
 #aboutus-contents-en{
-    width: auto;
-    margin: 0 6rem;
    /* margin-top: 5rem;*/
     font-size: 1.7rem;
     line-height: 2.5rem;
@@ -318,14 +342,18 @@ font-size: 3.7rem;
     
 }
 #aboutus-contents-kr{
-    width: auto;
-    margin: 0 6rem;
     margin-top: 5rem;
     font-size: 1.7rem;
     line-height: 3rem;    
     text-align: justify;
 
 }
+.section2-logo{
+    right: 6rem;
+    bottom: 6rem;
+    font-size: 5rem;
+}
+
 
 
 .section2-wrapper {
