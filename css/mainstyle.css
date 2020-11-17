@@ -199,6 +199,8 @@ line-height: 4rem;
 
 }
 
+
+/*contact*/
 .section3-wrapper{
     display: block;
     color: white;
@@ -224,7 +226,7 @@ font-size: 3.7rem;
     font-family: Aldrich;
     font-style: normal;
     font-weight: normal;
-    font-size: 50px;
+    font-size: 5rem;
 }
 .links-for-contact{
     margin-top: 8rem;
@@ -326,6 +328,93 @@ font-size: 3.7rem;
 }
 
 
+.section2-wrapper {
+    width: auto !important;
+    margin: auto 6rem;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.members-title {
+    width:fit-content;
+    margin-top: 12rem;
+    font-size: 4rem;
+
+    font-family: Aldrich;
+    font-style: normal;
+    font-weight: normal;
+    color: #00007F;
+}
+
+.member-wrapper {
+    width: 100%;
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.member-collum {
+    width: 100%;
+
+    font-family: Sen;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.5rem;
+    color: #171A87;
+    line-height: 2rem;
+}
+
+.image {
+    margin-top: 3rem;
+    width: 100%;
+    height: 200px;
+    margin-bottom: 2rem;
+    background-color: gray;
+}
+
+.member-collum a {
+    text-decoration: none;
+    color: #171A87;
+
+}
+
+
+.section3-wrapper{
+    display: block;
+    color: white;
+    width: fit-content;
+    margin: auto !important;
+    left: 0;
+    right: 0;
+    padding-top: 3rem;
+    text-align: center;
+}
+.slogan{
+font-size: 1.8rem;
+}
+.line-for-slogan{
+    margin-top: 0.2rem;
+    border-top: 1px solid white;
+}
+.contact{
+    margin-top: 1.5rem;
+    font-size: 2.5rem;
+}
+.links-for-contact
+{
+    margin-top: 3rem;
+}
+.links-for-contact .instagram{
+    width: 50px;
+    height: 50px;
+}
+
+.footer {
+    font-size: 1rem;
+}
 
     /*
     .subtitle-short
