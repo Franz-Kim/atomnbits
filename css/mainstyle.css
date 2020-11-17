@@ -331,20 +331,21 @@ font-size: 3.7rem;
         position: absolute;
         width: auto;
         margin: 0 6rem;
+        top:10%;
         
     }
 
 #aboutus-contents-en{
    /* margin-top: 5rem;*/
-    font-size: 1.7rem;
-    line-height: 2.5rem;
+    font-size: 1.2rem;
+    line-height: 2rem;
     text-align: justify;
     
 }
 #aboutus-contents-kr{
     margin-top: 5rem;
-    font-size: 1.7rem;
-    line-height: 3rem;    
+    font-size: 1.2rem;
+    line-height: 2.2rem;    
     text-align: justify;
 
 }
