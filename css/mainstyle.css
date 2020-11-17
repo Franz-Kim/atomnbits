@@ -337,21 +337,21 @@ font-size: 3.7rem;
 
 #aboutus-contents-en{
    /* margin-top: 5rem;*/
-    font-size: 2rem;
-    line-height: 2.5rem;
+    font-size: 1.5rem;
+    line-height: 2rem;
     text-align: justify;
     
 }
 #aboutus-contents-kr{
     margin-top: 5rem;
-    font-size: 2rem;
-    line-height: 3rem;    
+    font-size: 1.5rem;
+    line-height: 2.5rem;    
     text-align: justify;
 
 }
 .section2-logo{
     right: 4rem;
-    bottom: 4rem;
+    bottom: 3.5rem;
     font-size: 4rem;
 }
 
