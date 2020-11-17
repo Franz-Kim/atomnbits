@@ -1,8 +1,8 @@
 
 let loading_finished =0;
 var myFullpage = new fullpage('#fullpage', {
-    sectionsColor: ['#F0EBDB', '#FE6541', '#3A8273', '#F0EBDB'],
-    anchors: ['firstPage', 'secondPage', '3rdPage'],
+    sectionsColor: ['#F0EBDB', '#919192', '#E4F87A', '#0A3CD1'],
+    anchors: ['firstPage', 'secondPage', '3rdPage','4thPage'],
     navigation: true,
     navigationPosition: 'right',
     navigationTooltips: ['what we do', 'atom&bits', 'about us','contact'],
@@ -142,22 +142,25 @@ var keywords_in_animation_after = anime.timeline({loop: false, autoplay:false})
 
 
 //aboutus
-var aboutus_in_animation = anime({ //destination index1, aboutus in 애니메이션
-  targets: '.aboutus-contents',
-  opacity: 1,
-  easing: 'easeInQuad',
-  duration: 500,
-  color: 'rgba(0, 0, 0, 1)',
-  autoplay: false,
-  delay: anime.stagger(200)
-});
+
 var aboutus_out_animation = anime({ //destination index1, aboutus out 애니메이션
   targets: '.aboutus-contents',
-  color: ['rgba(0,0,0,1)','rgba(0, 0, 0, 0)'],
+//  color: ['rgba(0,0,0,1)','rgba(0, 0, 0, 0)'],
   easing: 'easeOutQuad',
   duration: 300,
   autoplay: false,
+  opacity: [1,0],
   delay: anime.stagger(50)
+});
+
+var aboutus_in_animation = anime({ //destination index1, aboutus in 애니메이션
+  targets: '.aboutus-contents',
+  opacity: [0,1],
+  easing: 'easeInQuad',
+  duration: 500,
+//  color: 'rgba(0, 0, 0, 1)',
+  autoplay: false,
+  delay: anime.stagger(200)
 });
 
 

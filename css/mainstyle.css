@@ -42,6 +42,7 @@ html{
     font-weight: normal;
     font-size: 3rem;
     line-height: 4.5rem;
+    color: #E4F87A;
     
 }
 #aboutus-contents-kr{
@@ -52,12 +53,17 @@ html{
     font-family: Noto Sans KR;
     font-style: normal;
     font-weight: 400;
-    font-size: 3rem;
+    font-size: 2.7rem;
     line-height: 4.5rem;    
+    color: #E4F87A;
 }
 .aboutus-contents{
     opacity: 0;
     color: transparent;
+}
+.aboutus-contents b{
+    color: #00007F;
+
 }
 
 
@@ -147,6 +153,24 @@ color: white;
     top:0;
 }
 
+
+/* .members */
+.section2-wrapper{
+    width: 1200px !important;
+    height: 100%;
+    margin: auto;
+    left: 0;
+    right: 0;
+}
+.members-title {
+    margin-top: 10%;
+    font-size: 6rem;
+
+    font-family: Aldrich;
+    font-style: normal;
+    font-weight: normal;
+    color: #00007F;
+}
 
 
 
