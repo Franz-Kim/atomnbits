@@ -176,6 +176,9 @@ var aboutus_in_animation = anime({ //destination index1, aboutus in 애니메이
 
 
 
+
+
+
 /*
 
 var keywords_in_animation = anime.timeline({loop: false})

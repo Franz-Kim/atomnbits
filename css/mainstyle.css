@@ -159,11 +159,13 @@ color: white;
     width: 1200px !important;
     height: 100%;
     margin: auto;
+    top: 0;
     left: 0;
     right: 0;
 }
 .members-title {
-    margin-top: 10%;
+    margin-top: 24rem;
+    margin-bottom: 0;
     font-size: 6rem;
 
     font-family: Aldrich;
@@ -171,7 +173,31 @@ color: white;
     font-weight: normal;
     color: #00007F;
 }
+.member-wrapper{
+    margin-top: 14rem;
+    display: flex;
+    justify-content: space-between;
+}
+.member-collum{
 
+    font-family: Sen;
+font-style: normal;
+font-weight: normal;
+font-size: 2rem;
+color: #171A87;
+line-height: 4rem;
+}
+.image{
+    width: 500px;
+    height: 300px;
+    margin-bottom: 2rem;
+    background-color: gray;
+}
+.member-collum a{
+    text-decoration: none;
+    color: #171A87;
+
+}
 
 
 @media (max-width: 768px) {
