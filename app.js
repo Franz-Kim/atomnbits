@@ -1,5 +1,7 @@
 import {Visual} from './visual.js';
 
+//this kinetic typography is inpired by "Interactive Developer" Jongmin-Kim https://www.youtube.com/c/cmiscm 
+
 class App{
   constructor(){
     this.canvas =document.createElement('canvas');
