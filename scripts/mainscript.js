@@ -37,7 +37,7 @@ document.getElementsByClassName("thirdvideo-over")[0].addEventListener("mouseout
 
 function FirstmouseOver() {
  document.getElementById("firstvideo").play();
- document.getElementsByClassName("firstvideocover")[0].style.background= 'rgba(23, 26, 135, 0)';
+ document.getElementsByClassName("firstvideocover")[0].style.background= 'rgba(10, 60, 209, 0)';
  var letters= document.getElementsByClassName("letters-1")[0];
  letters.style.background= 'rgba(228,248,122,1)';
  letters.style.color='black';
@@ -45,7 +45,7 @@ function FirstmouseOver() {
 }
 function FirstmouseOut() {
  document.getElementById("firstvideo").pause();
- document.getElementsByClassName("firstvideocover")[0].style.background= 'rgba(23, 26, 135, 0.85)';
+ document.getElementsByClassName("firstvideocover")[0].style.background= 'rgba(10, 60, 209, 0.85)';
  var letters= document.getElementsByClassName("letters-1")[0];
  letters.style.background= 'none';
  letters.style.color='white';
@@ -53,7 +53,7 @@ function FirstmouseOut() {
 }
 function SecondmouseOver() {
  document.getElementById("secondvideo").play();
- document.getElementsByClassName("secondvideocover")[0].style.background= 'rgba(23, 26, 135, 0.0)';
+ document.getElementsByClassName("secondvideocover")[0].style.background= 'rgba(10, 60, 209, 0.0)';
  var letters= document.getElementsByClassName("letters-2")[0];
  letters.style.background= 'rgba(228,248,122,1)';
  letters.style.color='black';
@@ -61,7 +61,7 @@ function SecondmouseOver() {
 }
 function SecondmouseOut() {
  document.getElementById("secondvideo").pause();
- document.getElementsByClassName("secondvideocover")[0].style.background= 'rgba(23, 26, 135, 0.85)';
+ document.getElementsByClassName("secondvideocover")[0].style.background= 'rgba(10, 60, 209, 0.85)';
  var letters= document.getElementsByClassName("letters-2")[0];
  letters.style.background= 'none';
  letters.style.color='white';
@@ -69,7 +69,7 @@ function SecondmouseOut() {
 }
 function ThirdmouseOver() {
  document.getElementById("thirdvideo").play();
- document.getElementsByClassName("thirdvideocover")[0].style.background= 'rgba(23, 26, 135, 0)';
+ document.getElementsByClassName("thirdvideocover")[0].style.background= 'rgba(10, 60, 209, 0)';
  var letters= document.getElementsByClassName("letters-3")[0];
  letters.style.background= 'rgba(228,248,122,1)';
  letters.style.color='black';
@@ -77,7 +77,7 @@ function ThirdmouseOver() {
 }
 function ThirdmouseOut() {
   document.getElementById("thirdvideo").pause();
-  document.getElementsByClassName("thirdvideocover")[0].style.background= 'rgba(23, 26, 135, 0.85)';
+  document.getElementsByClassName("thirdvideocover")[0].style.background= 'rgba(10, 60, 209, 0.85)';
   var letters= document.getElementsByClassName("letters-3")[0];
   letters.style.background= 'none';
   letters.style.color='white';
