@@ -317,8 +317,8 @@ font-size: 3.7rem;
 
     .keywords .letter-wrapper {
         flex: 0;
-        padding: 2rem 0;
-        height: 4rem;
+        padding: 0;
+        height: auto;
         top:0;
         bottom: 0;
     }
