@@ -308,7 +308,7 @@ font-size: 3.7rem;
     }
 
     .keywords {
-        font-size: 3rem;
+        font-size: 2rem;
         flex-direction: column;
         height: 100%;
         justify-content: space-around;
@@ -318,9 +318,13 @@ font-size: 3.7rem;
     .keywords .letter-wrapper {
         flex: 0;
         padding: 2rem 0;
-        height: 3rem;
+        height: 4rem;
         top:0;
         bottom: 0;
+    }
+    .letters{
+        width: 20rem;
+        height: 4rem;
     }
     #firstvideo-container {
         position: absolute;
