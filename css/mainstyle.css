@@ -322,6 +322,7 @@ font-size: 3.7rem;
     .keywords .letter-wrapper {
         flex: 0;
         padding: 0;
+        margin: 0;
         height: fit-content;
         top:0;
         bottom: 0;
