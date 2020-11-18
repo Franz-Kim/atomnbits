@@ -113,6 +113,13 @@ color: white;
 
 /*video*/
 
+.video_mo{
+    display: none;
+}
+.video_pc{
+    display: inline-block;
+}
+
 #firstvideo-container{
     position: absolute;
     top: 0;
@@ -123,8 +130,9 @@ color: white;
     z-index: 1;
 }
 #firstvideo {
-    margin-left: -50%;
     height: 100%;
+    width: 100%;
+    object-fit: cover;
 }
 #secondvideo-container{
     position: absolute;
@@ -288,6 +296,12 @@ font-size: 3.7rem;
         height: 3rem;
         top:0;
         bottom: 0;
+    }
+    .video_mo{
+        display: inline-block;
+    }
+    .video_pc{
+        display: none;
     }
     #firstvideo-container {
         position: absolute;
