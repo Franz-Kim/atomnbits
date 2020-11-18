@@ -27,6 +27,24 @@ var myFullpage = new fullpage('#fullpage', {
 });
 
 //영상 마우스 오버 일시정지 및 색 변화
+var mql = window.matchMedia("screen and (max-width: 768px)");
+if(mql.matches)
+{document.querySelector("#firstvideo > source").src = "/resources/videos/Horizontal_kinetic.mp4";
+document.querySelector("#secondvideo > source").src = "/resources/videos/Horizontal_interactive.mp4";
+document.querySelector("#thirdvideo > source").src = "/resources/videos/Horizontal_immersive.mp4";
+document.querySelector("#firstvideo").poster="/resources/kineticThumbnail.png";
+document.querySelector("#secondvideo").poster="/resources/interactiveThumbnail.png";
+document.querySelector("#thirdvideo").poster="/resources/immersiveThumbnail.png";
+}
+else{
+  document.querySelector("#firstvideo > source").src = "/resources/videos/vertical_kinetic.mp4";
+  document.querySelector("#secondvideo > source").src = "/resources/videos/vertical_interactive.mp4";
+  document.querySelector("#thirdvideo > source").src = "/resources/videos/vertical_immersive.mp4";
+}
+for( var i =0 ; i<document.getElementsByTagName("video").length;i++)
+{
+  document.getElementsByTagName("video")[i].load();
+}
 
 document.getElementsByClassName("firstvideo-over")[0].addEventListener("mouseover", FirstmouseOver);
 document.getElementsByClassName("firstvideo-over")[0].addEventListener("mouseout", FirstmouseOut);
