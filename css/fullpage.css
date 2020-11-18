@@ -95,7 +95,7 @@ html.fp-enabled,
     -webkit-transition: none !important;
     transition: none !important;
 }
-#fp-nav {
+#fp-nav { /*네비바 위치*/
     position: fixed;
     z-index: 100;
     margin-top: -32px;
@@ -155,15 +155,15 @@ html.fp-enabled,
 #fp-nav ul li a.active span,
 .fp-slidesNav ul li a.active span,
 #fp-nav ul li:hover a.active span,
-.fp-slidesNav ul li:hover a.active span{
+.fp-slidesNav ul li:hover a.active span{ /*active 상태 원*/
     height: 12px;
     width: 12px;
     margin: -6px 0 0 -6px;
     border-radius: 100%;
  }
 #fp-nav ul li a span,
-.fp-slidesNav ul li a span {
-    border-radius: 50%;
+.fp-slidesNav ul li a span { /*네비바 전체 색, 작은 원들 */
+    border-radius: 0%;
     position: absolute;
     z-index: 1;
     height: 4px;

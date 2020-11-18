@@ -57,49 +57,43 @@ function FirstmouseOver() {
  document.getElementById("firstvideo").play();
  document.getElementsByClassName("firstvideocover")[0].style.background= 'rgba(10, 60, 209, 0)';
  var letters= document.getElementsByClassName("letters-1")[0];
- letters.style.background= 'rgba(228,248,122,1)';
- letters.style.color='black';
- letters.style.border='none';
+ letters.style.background= 'rgba(10,60,209,0.77)';
+ letters.style.color='rgba(228,248,122,1)';
 }
 function FirstmouseOut() {
  document.getElementById("firstvideo").pause();
  document.getElementsByClassName("firstvideocover")[0].style.background= 'rgba(10, 60, 209, 0.85)';
  var letters= document.getElementsByClassName("letters-1")[0];
- letters.style.background= 'none';
- letters.style.color='white';
- letters.style.border='1px solid white';
+ letters.style.background= 'rgba(228,248,122,1)';
+ letters.style.color='rgba(11,54,188,1)';
 }
 function SecondmouseOver() {
  document.getElementById("secondvideo").play();
  document.getElementsByClassName("secondvideocover")[0].style.background= 'rgba(10, 60, 209, 0.0)';
  var letters= document.getElementsByClassName("letters-2")[0];
- letters.style.background= 'rgba(228,248,122,1)';
- letters.style.color='black';
- letters.style.border='none';
+ letters.style.background= 'rgba(10,60,209,0.77)';
+ letters.style.color='rgba(228,248,122,1)';
 }
 function SecondmouseOut() {
  document.getElementById("secondvideo").pause();
  document.getElementsByClassName("secondvideocover")[0].style.background= 'rgba(10, 60, 209, 0.85)';
  var letters= document.getElementsByClassName("letters-2")[0];
- letters.style.background= 'none';
- letters.style.color='white';
- letters.style.border='1px solid white';
+ letters.style.background= 'rgba(228,248,122,1)';
+ letters.style.color='rgba(11,54,188,1)';
 }
 function ThirdmouseOver() {
  document.getElementById("thirdvideo").play();
  document.getElementsByClassName("thirdvideocover")[0].style.background= 'rgba(10, 60, 209, 0)';
  var letters= document.getElementsByClassName("letters-3")[0];
- letters.style.background= 'rgba(228,248,122,1)';
- letters.style.color='black';
- letters.style.border='none';
+ letters.style.background= 'rgba(10,60,209,0.77)';
+ letters.style.color='rgba(228,248,122,1)';
 }
 function ThirdmouseOut() {
   document.getElementById("thirdvideo").pause();
   document.getElementsByClassName("thirdvideocover")[0].style.background= 'rgba(10, 60, 209, 0.85)';
   var letters= document.getElementsByClassName("letters-3")[0];
-  letters.style.background= 'none';
-  letters.style.color='white';
-  letters.style.border='1px solid white';
+  letters.style.background= 'rgba(228,248,122,1)';
+  letters.style.color='rgba(11,54,188,1)';
 }
 
 
@@ -124,8 +118,6 @@ ml4.scaleOut = [1,3];
 ml4.durationIn = 500;
 ml4.durationOut = 200;
 ml4.delay = 500;
-ml4.colorin = ['rgba(0,0,0,0)','rgba(0,0,0,1)'];
-ml4.colorout= ['rgba(0,0,0,1)','rgba(0,0,0,0)'];
 
 var keywords_out_animation = anime.timeline({loop: false,autoplay:false}) //사라짐 애니메이션( 이게 위로가야함, 초기셋팅으로 준비하게되는듯)
 .add({
@@ -140,10 +132,9 @@ var keywords_out_animation = anime.timeline({loop: false,autoplay:false}) //사�
 
 var keywords_in_animation = anime.timeline({loop: false})
   .add({
-    targets: '.keywords .letter-wrapper',
+    targets: ['.keywords .letter-wrapper','.videx-wrap'],
     opacity: ml4.opacityIn,
     scale: ml4.scaleIn,
-    color:ml4.colorin,
     delay:1500,
     duration:500
 });
@@ -154,7 +145,6 @@ var keywords_in_animation_after = anime.timeline({loop: false, autoplay:false})
     targets: '.keywords .letter-wrapper',
     opacity: ml4.opacityIn,
     scale: ml4.scaleIn,
-    color:ml4.colorin,
     duration:500
 });
 
