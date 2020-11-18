@@ -310,7 +310,7 @@ font-size: 3.7rem;
     .keywords {
         position: absolute;
         width: 100%;
-        top:0;
+        top:-2rem;
         font-size: 2rem;
         flex-direction: column;
         height: 100%;
