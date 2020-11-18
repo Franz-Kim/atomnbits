@@ -315,6 +315,7 @@ font-size: 3.7rem;
         flex-direction: column;
         height: 100%;
         justify-content: space-around;
+        margin: 0;
 
     }
 
