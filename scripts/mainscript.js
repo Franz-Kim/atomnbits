@@ -1,7 +1,7 @@
 
 let loading_finished =0;
 let intervalrefresh;
-const imagestaggdelay = 1000;
+const imagestaggdelay = 700;
 
 var myFullpage = new fullpage('#fullpage', {
     sectionsColor: ['#F0EBDB', '#0A3CD1', '#E4F87A','#E4F87A', '#0A3CD1'],
