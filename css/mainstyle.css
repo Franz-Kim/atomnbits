@@ -327,11 +327,15 @@ font-size: 3.7rem;
 .links-for-contact{
     margin-top: 8rem;
 }
+.insta-link{
+
+}
 
 .footer {
     width: auto;
     left: 0;
     right: 0;
+    bottom: 0;
     position: absolute;
     color: white;
 
@@ -342,7 +346,7 @@ font-size: 3.7rem;
     display: flex;
     justify-content: space-between;
     padding: 2rem 2rem;
-    bottom: 0;
+
     border-top: 1px solid #5F5F5F;
 }
 
@@ -449,7 +453,7 @@ font-size: 3.7rem;
 .section2-logo{
     right: 4rem;
     bottom: 3.5rem;
-    font-size: 4rem;
+    font-size: 3rem;
 }
 
 
