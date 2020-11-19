@@ -158,18 +158,19 @@ html.fp-enabled,
 .fp-slidesNav ul li:hover a.active span{ /*active 상태 원*/
     height: 12px;
     width: 12px;
-    margin: -6px 0 0 -6px;
+    margin: -2px 0 0 -2px;
     border-radius: 100%;
+    background: rgba(47,96,242,1);
  }
 #fp-nav ul li a span,
 .fp-slidesNav ul li a span { /*네비바 전체 색, 작은 원들 */
-    border-radius: 0%;
+    border-radius: 50%;
     position: absolute;
     z-index: 1;
-    height: 4px;
-    width: 4px;
+    height: 12px;
+    width: 12px;
     border: 0;
-    background: rgb(255, 255, 255);
+    background: rgba(206,205,205,1);
     left: 50%;
     top: 50%;
     margin: -2px 0 0 -2px;

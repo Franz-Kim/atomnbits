@@ -19,7 +19,7 @@ var myFullpage = new fullpage('#fullpage', {
         if (destination.index == 2) {}
         if (destination.index == 3) {
           randompicturepsotion();
-          experience_in_animation.play();
+          experience_in_animation.restart();
 
           intervalrefresh = setInterval(function () {
             experience_in_animation.play();
@@ -237,6 +237,7 @@ var experience_out_animation = anime({ //destination index1, aboutus out 애니�
   scale: ml4.scaleOut,
   duration: ml4.durationOut,
   easing: "easeInExpo",
+  duration:1,
   autoplay:false
 });
 
