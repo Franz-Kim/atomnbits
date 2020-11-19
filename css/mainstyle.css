@@ -215,7 +215,9 @@ color: #0B36BC;
     right: 0;
 }
 .members-title {
-    margin-top: 24rem;
+    position: absolute;
+    top: 15%;
+    margin: 0;
     margin-bottom: 0;
     font-size: 6rem;
 
@@ -225,7 +227,9 @@ color: #0B36BC;
     color: #00007F;
 }
 .member-wrapper{
-    margin-top: 14rem;
+    width: 1200px;
+    position: absolute;
+    top:30%;
     display: flex;
     justify-content: space-between;
 }
@@ -249,6 +253,26 @@ line-height: 4rem;
     color: #171A87;
 
 }
+
+/*what-we-experienced*/
+
+.section2-2-wrapper{
+    position: absolute;
+    z-index: 9999;
+}
+.section2-2-wrapper .members-title{
+
+    background-color: rgba(228,248,122,0.7);
+}
+.section3-img-wrapper{
+    position: absolute;
+    top: 0;
+    z-index: 1;
+}
+.ex-img{
+    border: 15px solid #171A87;
+}
+
 
 
 /*contact*/
@@ -420,8 +444,8 @@ font-size: 3.7rem;
 
 .members-title {
     width:fit-content;
-    margin-top: 12rem;
     font-size: 4rem;
+    top:10%;
 
     font-family: Aldrich;
     font-style: normal;
@@ -430,8 +454,10 @@ font-size: 3.7rem;
 }
 
 .member-wrapper {
-    width: 100%;
-    margin-top: 2rem;
+    position: relative;
+    width: inherit;
+    top:20%;
+
     display: flex;
     justify-content: space-between;
     flex-direction: column;
@@ -462,9 +488,21 @@ font-size: 3.7rem;
 
 }
 
+/*whatwe experienced*/
+.section2-2-wrapper{
+    position: absolute;
+    z-index: 9999;
+}
+
 .section2-2-wrapper .members-title{
     font-size: 3rem;
+    position: absolute;
+    z-index: 9999;
 }
+.ex-img{
+    border: 8px solid #171A87;
+}
+
 
 
 .section3-wrapper{

@@ -1,5 +1,8 @@
 
 let loading_finished =0;
+let intervalrefresh;
+const imagestaggdelay = 1000;
+
 var myFullpage = new fullpage('#fullpage', {
     sectionsColor: ['#F0EBDB', '#0A3CD1', '#E4F87A','#E4F87A', '#0A3CD1'],
     anchors: ['firstPage', 'secondPage', '3rdPage','4thPage','5thPage'],
@@ -14,6 +17,15 @@ var myFullpage = new fullpage('#fullpage', {
             aboutus_in_animation.play();//1번페이지 로딩 (aboutus)
         }
         if (destination.index == 2) {}
+        if (destination.index == 3) {
+          randompicturepsotion();
+          experience_in_animation.play();
+
+          intervalrefresh = setInterval(function () {
+            experience_in_animation.play();
+            randompicturepsotion();
+          }, document.getElementsByClassName("ex-img").length*imagestaggdelay);
+        }
     },
     onLeave: function (origin, destination, dirction) {
         if (origin.index == 0) {
@@ -22,6 +34,11 @@ var myFullpage = new fullpage('#fullpage', {
         }
         if (origin.index == 1) {
             aboutus_out_animation.play();
+        }
+        if(origin.index ==3)
+        {
+          clearInterval(intervalrefresh);
+          experience_out_animation.play();
         }
     }
 });
@@ -172,10 +189,66 @@ var aboutus_in_animation = anime({ //destination index1, aboutus in 애니메이
 });
 
 
+//what we experienced
 
 
 
+var pictureorigin = [];
+let firstimeloop =0;
 
+function randompicturepsotion() {
+  let pictures = document.getElementsByClassName("ex-img");
+
+  for (var i = 0; i < pictures.length; i++) {
+  
+    pictures[i].style.position = "absolute";
+  
+    if (firstimeloop ==0){
+      pictureorigin.push({width:pictures[i].width,height:pictures[i].height});
+      if(i==pictures.length-1){
+        firstimeloop++;
+      }
+    }
+    let randomscale;
+    if(mql.matches){
+      randomscale = Math.random() * (0.5 - 0.2) + 0.2;
+    }
+    else{
+      randomscale = Math.random() * (1 - 0.5) + 0.5;  
+    }
+    let picturewidth = pictureorigin[i].width*randomscale;
+    let pictureheight = pictureorigin[i].height*randomscale;
+    let randompositionX = Math.random() * (window.innerWidth - picturewidth);
+    //let randompositionY = Math.random() * ((window.innerHeight -pictureheight)-(window.innerHeight*0.25))+(window.innerHeight*0.25);
+    let randompositionY = Math.random() * ((window.innerHeight -pictureheight));
+    let randomrotation = Math.random() * (60)-30;
+    pictures[i].style.width = `${picturewidth}px`;
+    pictures[i].style.height = `${pictureheight}px`;
+    pictures[i].style.left=`${randompositionX}px`;
+    pictures[i].style.top=`${randompositionY}px`;
+    pictures[i].style.transform =`rotate(45deg)`;
+
+  }
+}
+
+var experience_out_animation = anime({ //destination index1, aboutus out 애니메이션
+  targets: '.ex-img',
+  opacity: [1,0],
+  scale: ml4.scaleOut,
+  duration: ml4.durationOut,
+  easing: "easeInExpo",
+  autoplay:false
+});
+
+var experience_in_animation = anime({ //destination index1, aboutus in 애니메이션
+  targets: '.ex-img',
+  opacity: ml4.opacityIn,
+  scale: ml4.scaleIn,
+  easing: 'linear',
+  duration:1,
+  delay: anime.stagger(imagestaggdelay),
+  autoplay:false
+});
 
 
 
