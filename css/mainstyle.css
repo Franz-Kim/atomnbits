@@ -48,19 +48,19 @@ html{
     font-style: normal;
     font-weight: normal;
     font-size: 3rem;
-    line-height: 4.5rem;
+    line-height: 6rem;
     color: white;
     
 }
 #aboutus-contents-kr{
     margin: auto;
-    margin-top: 5rem;
+    margin-top: 10rem;
     left: 0;right: 0;
     font-family: Noto Sans KR;
     font-style: normal;
     font-weight: 400;
-    font-size: 2.7rem;
-    line-height: 4.5rem;    
+    font-size: 3rem;
+    line-height: 6rem;    
     color: white;
 }
 .aboutus-contents{
@@ -75,13 +75,13 @@ html{
 }
 .section2-logo{
     position: absolute;
-    right: 10rem;
-    bottom: 6rem;
+    right: 4rem;
+    bottom: 4rem;
     font-family: Aldrich;
     font-style: normal;
     font-weight: normal;
-    font-size: 10rem;
-    color: #FFFFFF;
+    font-size: 4rem;
+    color:  #E4F87A;
 }
 
 
