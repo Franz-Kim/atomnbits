@@ -1,11 +1,11 @@
 
 let loading_finished =0;
 var myFullpage = new fullpage('#fullpage', {
-    sectionsColor: ['#F0EBDB', '#0A3CD1', '#E4F87A', '#0A3CD1'],
-    anchors: ['firstPage', 'secondPage', '3rdPage','4thPage'],
+    sectionsColor: ['#F0EBDB', '#0A3CD1', '#E4F87A','#E4F87A', '#0A3CD1'],
+    anchors: ['firstPage', 'secondPage', '3rdPage','4thPage','5thPage'],
     navigation: true,
     navigationPosition: 'right',
-    navigationTooltips: ['what we do', 'atom&bits', 'about us','contact'],
+    navigationTooltips: ['what we do', 'atom&bits', 'about us','what we experienced','contact'],
     afterLoad: function (origin, destination, direction) {
         if (destination.index == 0 && loading_finished == 1) {
             keywords_in_animation_after.play(); //0번페이지 로딩 (keywords)
