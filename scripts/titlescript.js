@@ -1,14 +1,17 @@
 var startbuttone = document.querySelector('.startbutton');
 var everthing = document.body;
+
 const mouseClickAnimation =()=>{
+
+ 
     anime({
        // targets: '.square',
        targets: everthing,
        // translateY : -document.documentElement.clientHeight,
-       translateY:-window.innerHeight,
+       translateY:[0,-window.innerHeight],
         easing: 'easeInQuint',
         loop: false,
-        duration: 1000
+        duration: 500
     });
 
     setTimeout(function () {
@@ -17,7 +20,7 @@ const mouseClickAnimation =()=>{
             anime({
                 targets: everthing,
                 // translateY : -document.documentElement.clientHeight,
-                translateY: window.innerHeight,
+                translateY: [-window.innerHeight,0],
                 easing: 'easeInQuint',
                 loop: false,
                 duration: 100
