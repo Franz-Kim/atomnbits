@@ -23,7 +23,7 @@ const mouseClickAnimation =()=>{
                 translateY: [-window.innerHeight,0],
                 easing: 'easeInQuint',
                 loop: false,
-                duration: 100
+                duration: 500
             });
         }
         window.location.href = "main.html";
