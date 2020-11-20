@@ -44,7 +44,7 @@ canvas{
   font-weight: normal;
   font-size: 3rem;
   position: absolute;
-  top: 20%;
+  top: 21%;
   color: #E4F87A;
   text-align: center;
   line-height: 2rem;
@@ -72,7 +72,7 @@ canvas{
   left:0;
   right:0;
   text-decoration: none;
-  border: 4px solid #E4F87A;
+  border: 3.5px solid #E4F87A;
 }
 
 @media (max-width: 768px) {
