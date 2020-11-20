@@ -6,7 +6,7 @@ html{
 /*about us css*/
 .about-us-wrapper{
     position: absolute;
-    width: 1200px;
+    max-width: 1200px;
     left:0;
     right:0;
     top:15%;
