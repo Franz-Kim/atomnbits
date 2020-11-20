@@ -485,7 +485,7 @@ font-size: 3.7rem;
 .members-title {
     width:fit-content;
     font-size: 4rem;
-    margin-top:8%;
+    margin-top:15%;
 
     font-family: Aldrich;
     font-style: normal;
@@ -520,7 +520,7 @@ font-size: 3.7rem;
 }
 
 .image {
-    margin-top: 3rem;
+    margin-top: 4rem;
     width: 100px;
     height: 100px;
     margin-bottom: 1rem;
