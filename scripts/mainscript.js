@@ -54,11 +54,6 @@ var myFullpage = new fullpage('#fullpage', {
         clearInterval(intervalrefresh);
         experience_out_animation.play();
       }
-      if (mql.matches) {
-        FirstmouseOut();
-        SecondmouseOut();
-        ThirdmouseOut();
-      }
     }
 });
 
@@ -94,6 +89,8 @@ function FirstmouseOver() {
  var letters= document.getElementsByClassName("letters-1")[0];
  letters.style.background= 'rgba(10,60,209,0.77)';
  letters.style.color='rgba(228,248,122,1)';
+ SecondmouseOut();
+ ThirdmouseOut();
 }
 function FirstmouseOut() {
  document.getElementById("firstvideo").pause();
@@ -108,6 +105,8 @@ function SecondmouseOver() {
  var letters= document.getElementsByClassName("letters-2")[0];
  letters.style.background= 'rgba(10,60,209,0.77)';
  letters.style.color='rgba(228,248,122,1)';
+ FirstmouseOut();
+ ThirdmouseOut();
 }
 function SecondmouseOut() {
  document.getElementById("secondvideo").pause();
@@ -122,6 +121,8 @@ function ThirdmouseOver() {
  var letters= document.getElementsByClassName("letters-3")[0];
  letters.style.background= 'rgba(10,60,209,0.77)';
  letters.style.color='rgba(228,248,122,1)';
+ FirstmouseOut();
+ SecondmouseOut();
 }
 function ThirdmouseOut() {
   document.getElementById("thirdvideo").pause();
