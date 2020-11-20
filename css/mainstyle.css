@@ -438,6 +438,7 @@ font-size: 3.7rem;
     font-size: 1.5rem;
     line-height: 2.5rem;
     text-align: justify;
+    word-break: normal;
     
 }
 #aboutus-contents-kr{
@@ -445,6 +446,7 @@ font-size: 3.7rem;
     font-size: 1.5rem;
     line-height: 2.7rem;    
     text-align: justify;
+    word-break: normal;
 
 }
 .section2-logo{
@@ -494,7 +496,7 @@ font-size: 3.7rem;
 }
 .member-name{
     margin-top: 20%;
-    line-height: 2rem;
+    line-height: 2.2rem;
 }
 .member-name b{
     font-size: 1.8rem;
@@ -509,6 +511,9 @@ font-size: 3.7rem;
     width: 100px;
     height: 100px;
     margin-bottom: 1rem;
+    display: none;
+}
+.member-align-br{
     display: none;
 }
 .personal-site{
@@ -561,7 +566,10 @@ font-size: 1.6rem;
 }
 
 .footer {
-    font-size: 0.95rem;
+    font-size: 1.2rem;
+}
+.footer-right{
+    text-align: right;
 }
 
     /*
