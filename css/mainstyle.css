@@ -439,6 +439,7 @@ font-size: 3.7rem;
 
 }
 .section2-logo{
+    display: none;
     right: 4rem;
     bottom: 3.5rem;
     font-size: 3rem;
@@ -447,11 +448,10 @@ font-size: 3.7rem;
 
 
 .section-wrapper {
-    position: absolute;
+    position: relative;
     width: auto !important;
+    height: auto;
     margin: 0 11%;
-    height: 100%;
-    top: 0 !important;
     left: 0;
     right: 0;
 }
@@ -459,7 +459,7 @@ font-size: 3.7rem;
 .members-title {
     width:fit-content;
     font-size: 3rem;
-
+    padding-top: 0;
     font-family: Aldrich;
     font-style: normal;
     font-weight: normal;
@@ -485,11 +485,15 @@ font-size: 3.7rem;
     line-height: 2rem;
 }
 .member-name{
+    margin-top: 20%;
     line-height: 2rem;
 }
+.member-name b{
+    font-size: 1.8rem;
+}
 .biography{
-    margin-top: 1rem;
-    line-height: 1.7rem;
+    margin-top: 7%;
+    line-height: 2rem;
 }
 
 .image {
@@ -497,6 +501,7 @@ font-size: 3.7rem;
     width: 100px;
     height: 100px;
     margin-bottom: 1rem;
+    display: none;
 }
 .personal-site{
     display: none;
@@ -549,7 +554,7 @@ font-size: 1.6rem;
 }
 
 .footer {
-    font-size: 0.85rem;
+    font-size: 0.95rem;
 }
 
     /*
