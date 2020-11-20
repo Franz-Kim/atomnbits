@@ -45,20 +45,29 @@ html{
     opacity: 0;
     color: transparent;
 }
-.aboutus-contents b{
-    font-family: Aldrich;
-    color: #00007F;
+#aboutus-contents-en b{
+    font-family: Sen;
+    font-weight: 600;
+    color: #0B36BC;
+    background-color: #E4F87A;
+
+}
+
+#aboutus-contents-kr b{
+    font-family: Noto Sans KR;
+    color: #0B36BC;
+    font-weight: 600;
     background-color: #E4F87A;
 
 }
 .section2-logo{
     position: absolute;
-    right: 8rem;
-    bottom: 4rem;
+    right: 12rem;
+    bottom: 7rem;
     font-family: Aldrich;
     font-style: normal;
     font-weight: normal;
-    font-size: 4rem;
+    font-size: 10rem;
     color:  #E4F87A;
 }
 
@@ -202,7 +211,7 @@ color: #0B36BC;
     font-family: Aldrich;
     font-style: normal;
     font-weight: normal;
-    color: #00007F;
+    color: #0B36BC;
 }
 .member-wrapper{
     width: 1200px;
@@ -426,15 +435,15 @@ font-size: 3.7rem;
 
 #aboutus-contents-en{
    /* margin-top: 5rem;*/
-    font-size: 1.3rem;
-    line-height: 2.3rem;
+    font-size: 1.5rem;
+    line-height: 2.5rem;
     text-align: justify;
     
 }
 #aboutus-contents-kr{
     margin-top: 6rem;
-    font-size: 1.3rem;
-    line-height: 2.5rem;    
+    font-size: 1.5rem;
+    line-height: 2.7rem;    
     text-align: justify;
 
 }
@@ -463,7 +472,6 @@ font-size: 3.7rem;
     font-family: Aldrich;
     font-style: normal;
     font-weight: normal;
-    color: #00007F;
 }
 
 .member-wrapper {
@@ -504,7 +512,6 @@ font-size: 3.7rem;
     display: none;
 }
 .personal-site{
-    display: none;
 }
 
 /*whatwe experienced*/

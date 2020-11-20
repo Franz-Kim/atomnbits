@@ -188,7 +188,7 @@ html.fp-enabled,
 #fp-nav ul li .fp-tooltip {
     position: absolute;
     top: 1px;
-    color: #fff;
+    color: rgba(255,255,255,0.7);
     font-size: 14px;
     font-family: arial, helvetica, sans-serif;
     white-space: nowrap;
@@ -259,7 +259,7 @@ html.fp-enabled,
         width: 8px;
         border: 0;
         background: rgba(206,205,205,1);
-        left: 50%;
+        left: 100%;
         top: 50%;
         margin: -2px 0 0 -2px;
         -webkit-transition: all 0.1s ease-in-out;
@@ -267,5 +267,6 @@ html.fp-enabled,
         -o-transition: all 0.1s ease-in-out;
         transition: all 0.1s ease-in-out;
     }
+  
 
 }
