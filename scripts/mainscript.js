@@ -89,6 +89,7 @@ function FirstmouseOver() {
  var letters= document.getElementsByClassName("letters-1")[0];
  letters.style.background= 'rgba(10,60,209,0.77)';
  letters.style.color='rgba(228,248,122,1)';
+ letters.style.border = '4px solid rgba(228,248,122,1)';
  SecondmouseOut();
  ThirdmouseOut();
 }
@@ -98,6 +99,7 @@ function FirstmouseOut() {
  var letters= document.getElementsByClassName("letters-1")[0];
  letters.style.background= 'rgba(228,248,122,1)';
  letters.style.color='rgba(11,54,188,1)';
+ letters.style.border = 'none';
 }
 function SecondmouseOver() {
  document.getElementById("secondvideo").play();
@@ -105,6 +107,9 @@ function SecondmouseOver() {
  var letters= document.getElementsByClassName("letters-2")[0];
  letters.style.background= 'rgba(10,60,209,0.77)';
  letters.style.color='rgba(228,248,122,1)';
+ letters.style.border = '4px solid rgba(228,248,122,1)';
+
+
  FirstmouseOut();
  ThirdmouseOut();
 }
@@ -114,6 +119,7 @@ function SecondmouseOut() {
  var letters= document.getElementsByClassName("letters-2")[0];
  letters.style.background= 'rgba(228,248,122,1)';
  letters.style.color='rgba(11,54,188,1)';
+ letters.style.border = 'none';
 }
 function ThirdmouseOver() {
  document.getElementById("thirdvideo").play();
@@ -121,6 +127,7 @@ function ThirdmouseOver() {
  var letters= document.getElementsByClassName("letters-3")[0];
  letters.style.background= 'rgba(10,60,209,0.77)';
  letters.style.color='rgba(228,248,122,1)';
+ letters.style.border = '4px solid rgba(228,248,122,1)';
  FirstmouseOut();
  SecondmouseOut();
 }
@@ -130,6 +137,7 @@ function ThirdmouseOut() {
   var letters= document.getElementsByClassName("letters-3")[0];
   letters.style.background= 'rgba(228,248,122,1)';
   letters.style.color='rgba(11,54,188,1)';
+  letters.style.border = 'none';
 }
 
 

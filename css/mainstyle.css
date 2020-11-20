@@ -128,7 +128,7 @@ color: #0B36BC;
     position: absolute;
     bottom: 10%;
     width: 100%;
-    font-family: Sen;
+    font-family: aldrich;
     font-style: normal;
     font-weight: normal;
     font-size: 1.5rem;
@@ -136,7 +136,7 @@ color: #0B36BC;
     display: flex;
     text-align: center;
     justify-content: space-around;
-    color: white;
+    color: rgba(255,255,255,0.8);
 }
 
 .videx-wrap{
@@ -221,7 +221,7 @@ color: #0B36BC;
 }
 .members-title {
     
-    margin-top: 10%;
+    margin-top: 20%;
     margin-bottom: 0;
     font-size: 6rem;
 
@@ -238,7 +238,7 @@ color: #0B36BC;
 }
 .member-collum{
 
-    font-family: Sen;
+font-family: Sen;
 font-style: normal;
 font-weight: normal;
 font-size: 2rem;
@@ -258,6 +258,19 @@ line-height: 4rem;
     margin-top: 2rem;
     line-height: 3rem;
 }
+
+.personal-site{
+    border-top: 1px solid rgba(10, 60, 209, 0.6);
+    font-weight: 600;
+    margin-top: 2rem;
+    padding-top: 1rem;
+    text-align: right;
+
+}
+.shortcut-icon{
+    height: 1.5rem;
+}
+
 
 /*what-we-experienced*/
 
@@ -511,6 +524,9 @@ font-size: 3.7rem;
     width: 100px;
     height: 100px;
     margin-bottom: 1rem;
+}
+.personal-site{
+    display: none;
 }
 
 /*whatwe experienced*/
