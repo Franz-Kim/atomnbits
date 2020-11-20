@@ -11,7 +11,7 @@ const mouseClickAnimation =()=>{
        translateY:[0,-window.innerHeight],
         easing: 'easeInQuint',
         loop: false,
-        duration: 500
+        duration: 1000
     });
 
     setTimeout(function () {
@@ -23,7 +23,7 @@ const mouseClickAnimation =()=>{
                 translateY: [-window.innerHeight,0],
                 easing: 'easeInQuint',
                 loop: false,
-                duration: 500
+                duration: 1000
             });
         }
         window.location.href = "main.html";
