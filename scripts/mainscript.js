@@ -221,11 +221,12 @@ var aboutus_out_animation = anime({ //destination index1, aboutus out 애니메�
 var aboutus_in_animation = anime({ //destination index1, aboutus in 애니메이션
   targets: '.aboutus-contents',
   opacity: [0,1],
+  translateX: [-window.innerWidth*0.3,0],
   easing: 'easeInQuad',
-  duration: 500,
+  duration: 800,
 //  color: 'rgba(0, 0, 0, 1)',
   autoplay: true,
-  delay: anime.stagger(200)
+  delay: anime.stagger(600)
 });
 
 

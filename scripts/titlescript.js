@@ -7,11 +7,11 @@ const mouseClickAnimation =()=>{
     anime({
        // targets: '.square',
        targets: everthing,
-       // translateY : -document.documentElement.clientHeight,
-       translateY:[0,-window.innerHeight],
+         translateX:[0,window.innerWidth*0.2],
+        opacity: [1,0],
         easing: 'easeInQuint',
         loop: false,
-        duration: 1000
+        duration: 800
     });
 
     setTimeout(function () {
@@ -19,8 +19,8 @@ const mouseClickAnimation =()=>{
         if (mql.matches) {
             anime({
                 targets: everthing,
-                // translateY : -document.documentElement.clientHeight,
-                translateY: [-window.innerHeight,0],
+                opacity: [0,1],
+                translateX: [window.innerWidth*0.2,0],
                 easing: 'easeInQuint',
                 loop: false,
                 duration: 1000
@@ -42,11 +42,11 @@ setTimeout(function () {
     anime({
         // targets: '.square',
         targets: everthing,
-        // translateY : -document.documentElement.clientHeight,
-        translateY: [0, -window.innerHeight],
+        translateX: [0, window.innerWidth*0.2],
+        opacity: [1,0],
         easing: 'easeInQuint',
         loop: false,
-        duration: 1000
+        duration: 800
     });
 
     setTimeout(function () {
@@ -54,8 +54,8 @@ setTimeout(function () {
         if (mql.matches) {
             anime({
                 targets: everthing,
-                // translateY : -document.documentElement.clientHeight,
-                translateY: [-window.innerHeight, 0],
+                opacity:[0,1],
+                translateX: [window.innerWidth*0.2, 0],
                 easing: 'easeInQuint',
                 loop: false,
                 duration: 1000
@@ -64,4 +64,4 @@ setTimeout(function () {
         window.location.href = "main.html";
     }, 1100);
 
-}, 5000);
+}, 8000);
