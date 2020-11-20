@@ -345,7 +345,72 @@ font-size: 3.55rem;
 
     border-top: 1px solid rgba(255,255,255,0.5);
 }
+@media (max-height: 768px){
 
+    .about-us-wrapper{
+        position: relative;
+        width: auto;
+        margin: auto 8%;
+        top: 0;
+        
+    }
+    #aboutus-contents-en{
+     
+        font-size: 2.5rem;
+        line-height: 4rem;
+    
+        
+    }
+    #aboutus-contents-kr{
+        font-size: 2.3rem;
+        line-height: 4.5rem;
+  
+    }
+
+.section2-logo{
+    display: none;
+}
+
+
+.section-wrapper {
+}
+
+.members-title {
+    width:fit-content;
+    margin: 0 5%;
+    font-size: 3rem;
+    padding-top: 0;
+    font-family: Aldrich;
+    font-style: normal;
+    font-weight: normal;
+}
+
+.member-wrapper {
+    margin-left: 5%;
+    margin-right:5%;
+}
+
+.member-collum {
+    width: 100%;
+    margin-right:2rem;
+
+    font-family: Sen;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+}
+.member-name{
+    line-height: 2.2rem;
+}
+.biography{
+    line-height: 2rem;
+}
+
+   
+ 
+
+}
 
 @media (max-width: 768px) {
     html {
