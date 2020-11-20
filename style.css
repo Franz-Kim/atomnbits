@@ -36,8 +36,20 @@ canvas{
   top:10%;
   left:0;
   right:0;
+}
 
-
+.arrow{
+  font-family: Sen;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 3rem;
+  position: absolute;
+  top: 20%;
+  color: #E4F87A;
+  text-align: center;
+  line-height: 2rem;
+  left:0;
+  right:0;
 }
 .startbutton-container{
   position: absolute;

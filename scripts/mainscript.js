@@ -4,6 +4,8 @@ let intervalrefresh;
 let video_firsttime =0;
 const imagestaggdelay = 700;
 
+var mql = window.matchMedia("screen and (max-width: 768px)");
+
 var myFullpage = new fullpage('#fullpage', {
     sectionsColor: ['#0A3CD1', '#0A3CD1', '#E4F87A','#E4F87A', '#0A3CD1'],
     anchors: ['firstPage', 'secondPage', '3rdPage','4thPage','5thPage'],
@@ -24,6 +26,10 @@ var myFullpage = new fullpage('#fullpage', {
           else {
             keywords_in_animation_after.play();
           }
+          if(mql.matches)
+          {
+            FirstmouseOver();
+          }
       }
         if (destination.index == 2) {}
         if (destination.index == 3) {
@@ -40,21 +46,23 @@ var myFullpage = new fullpage('#fullpage', {
       if (origin.index == 0) {
         aboutus_out_animation.play();
         loading_finished = 1;
-    }  
+      }
       if (origin.index == 1) {
-        keywords_out_animation.play();
-        }
-      
-        if(origin.index ==3)
-        {
-          clearInterval(intervalrefresh);
-          experience_out_animation.play();
-        }
+        keywords_out_animation.play();        
+      }
+      if (origin.index == 3) {
+        clearInterval(intervalrefresh);
+        experience_out_animation.play();
+      }
+      if (mql.matches) {
+        FirstmouseOut();
+        SecondmouseOut();
+        ThirdmouseOut();
+      }
     }
 });
 
 //영상 마우스 오버 일시정지 및 색 변화
-var mql = window.matchMedia("screen and (max-width: 768px)");
 if(mql.matches)
 {document.querySelector("#firstvideo > source").src = "/resources/videos/Horizontal_kinetic.mp4";
 document.querySelector("#secondvideo > source").src = "/resources/videos/Horizontal_immersive.mp4";
