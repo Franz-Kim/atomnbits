@@ -82,6 +82,9 @@ canvas{
   .startbutton{
     border: 2px solid #E4F87A;
   }
+  .arrow{
+    transform: scale(0.6);
+  }
 
 
 

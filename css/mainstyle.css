@@ -4,23 +4,6 @@ html{
 
 
 /*about us css*/
-.headbar {
-
-    position: absolute;
-    top: 15%;
-    margin: auto;
-    left: 0;
-    right: 0;
-    width: 1200px;
-    text-align: left;
-
-    color: #808080;
-
-    font-family: Aldrich;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 2rem;
-}
 .about-us-wrapper{
     position: absolute;
     width: 1200px;
@@ -29,16 +12,6 @@ html{
     top:15%;
     margin: auto;
     
-}
-.aboutus-title{
-    left:0;
-    right:0;
-    margin: auto;
-    
-    font-family: Aldrich;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 5rem;
 }
 #aboutus-contents-en{
     margin: auto;
@@ -352,7 +325,7 @@ font-size: 3.7rem;
     right: 0;
     bottom: 0;
     position: absolute;
-    color: white;
+    color: rgba(255,255,255,0.8);
 
     font-family: Sen;
     font-style: normal;
@@ -362,7 +335,7 @@ font-size: 3.7rem;
     justify-content: space-between;
     padding: 2rem 2rem;
 
-    border-top: 1px solid #5F5F5F;
+    border-top: 1px solid rgba(255,255,255,0.5);
 }
 
 
@@ -444,10 +417,10 @@ font-size: 3.7rem;
 
 
     .about-us-wrapper{
-        position: absolute;
+        position: relative;
         width: auto;
-        margin: 0 13%;
-        top:7%;
+        margin: auto 13%;
+        top: 0;
         
     }
 
@@ -485,8 +458,7 @@ font-size: 3.7rem;
 
 .members-title {
     width:fit-content;
-    font-size: 4rem;
-    margin-top:10%;
+    font-size: 3rem;
 
     font-family: Aldrich;
     font-style: normal;
@@ -517,12 +489,11 @@ font-size: 3.7rem;
 }
 .biography{
     margin-top: 1rem;
-    font-size: 1.3rem;
     line-height: 1.7rem;
 }
 
 .image {
-    margin-top: 7%;
+    margin-top: 10%;
     width: 100px;
     height: 100px;
     margin-bottom: 1rem;
