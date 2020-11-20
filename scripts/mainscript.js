@@ -11,7 +11,7 @@ var myFullpage = new fullpage('#fullpage', {
     anchors: ['firstPage', 'secondPage', '3rdPage','4thPage','5thPage'],
     navigation: true,
     navigationPosition: 'right',
-    navigationTooltips: ['what we do', 'atom&bits', 'about us','what we experienced','contact'],
+    navigationTooltips: ['atom&bits', 'what we do', 'members','what we experienced','contact'],
     afterLoad: function (origin, destination, direction) {
 
         if (destination.index == 0 &&loading_finished ==1) {
