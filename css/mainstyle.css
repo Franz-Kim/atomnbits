@@ -504,14 +504,15 @@ font-size: 3.7rem;
     line-height: 2rem;
 }
 .biography{
+    margin-top: 1rem;
     line-height: 2rem;
 }
 
 .image {
     margin-top: 3rem;
-    width: 150px;
-    height: 150px;
-    margin-bottom: 2rem;
+    width: 100px;
+    height: 100px;
+    margin-bottom: 1rem;
 }
 
 /*whatwe experienced*/
