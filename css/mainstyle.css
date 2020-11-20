@@ -57,7 +57,7 @@ html{
 }
 #aboutus-contents-kr{
     margin: auto;
-    margin-top: 5rem;
+    margin-top: 10%;
     left: 0;right: 0;
     font-family: Noto Sans KR;
     font-style: normal;
@@ -244,19 +244,21 @@ color: #0B36BC;
 font-style: normal;
 font-weight: normal;
 font-size: 2rem;
-color: #171A87;
+color: #0B36BC;
 line-height: 4rem;
 }
 .image{
-    width: 500px;
+    width: 300px;
     height: 300px;
     margin-bottom: 2rem;
-    background-color: gray;
+    background-color:#0B36BC;
 }
-.member-collum a{
-    text-decoration: none;
-    color: #171A87;
-
+.member-name{
+    line-height: 3rem;
+}
+.biography{
+    margin-top: 2rem;
+    line-height: 3rem;
 }
 
 /*what-we-experienced*/
@@ -440,14 +442,14 @@ font-size: 3.7rem;
 #aboutus-contents-en{
    /* margin-top: 5rem;*/
     font-size: 1.5rem;
-    line-height: 2rem;
+    line-height: 2.5rem;
     text-align: justify;
     
 }
 #aboutus-contents-kr{
-    margin-top: 5rem;
+    margin-top: 6rem;
     font-size: 1.5rem;
-    line-height: 2.5rem;    
+    line-height: 2.7rem;    
     text-align: justify;
 
 }
@@ -471,7 +473,7 @@ font-size: 3.7rem;
 .members-title {
     width:fit-content;
     font-size: 4rem;
-    top:10%;
+    top:8%;
 
     font-family: Aldrich;
     font-style: normal;
@@ -482,7 +484,7 @@ font-size: 3.7rem;
 .member-wrapper {
     position: relative;
     width: inherit;
-    top:20%;
+    top:16%;
 
     display: flex;
     justify-content: space-between;
@@ -496,22 +498,20 @@ font-size: 3.7rem;
     font-style: normal;
     font-weight: normal;
     font-size: 1.5rem;
-    color: #171A87;
+    line-height: 2rem;
+}
+.member-name{
+    line-height: 2rem;
+}
+.biography{
     line-height: 2rem;
 }
 
 .image {
     margin-top: 3rem;
-    width: 100%;
+    width: 150px;
     height: 150px;
     margin-bottom: 2rem;
-    background-color: gray;
-}
-
-.member-collum a {
-    text-decoration: none;
-    color: #171A87;
-
 }
 
 /*whatwe experienced*/
