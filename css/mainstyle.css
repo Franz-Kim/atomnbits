@@ -501,16 +501,15 @@ font-size: 3.55rem;
    /* margin-top: 5rem;*/
     font-size: 1.5rem;
     line-height: 2.5rem;
-    text-align: justify;
-    word-break: normal;
+    text-align: left;
     
 }
 #aboutus-contents-kr{
     margin-top: 6rem;
     font-size: 1.5rem;
     line-height: 2.7rem;    
-    text-align: justify;
-    word-break: normal;
+    text-align: left;
+    word-break: keep-all;
 
 }
 .section2-logo{
