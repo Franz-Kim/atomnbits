@@ -1,7 +1,9 @@
 var startbuttone = document.querySelector('.startbutton');
+var everthing = document.body;
 const mouseClickAnimation =()=>{
     anime({
-        targets: '.square',
+       // targets: '.square',
+       targets: everthing,
        // translateY : -document.documentElement.clientHeight,
        translateY:-window.innerHeight,
         easing: 'easeInQuint',
@@ -10,16 +12,17 @@ const mouseClickAnimation =()=>{
     });
 
     setTimeout(function () {
-        
-        anime({
-            targets: '.square',
-            // translateY : -document.documentElement.clientHeight,
-            translateY: window.innerHeight,
-            easing: 'easeInQuint',
-            loop: false,
-            duration: 100
-        });
-
+        var mql = window.matchMedia("screen and (max-width: 768px)");
+        if (mql.matches) {
+            anime({
+                targets: 'everthing',
+                // translateY : -document.documentElement.clientHeight,
+                translateY: window.innerHeight,
+                easing: 'easeInQuint',
+                loop: false,
+                duration: 100
+            });
+        }
         window.location.href = "main.html";
 
       

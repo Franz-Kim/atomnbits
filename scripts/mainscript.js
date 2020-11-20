@@ -1,21 +1,30 @@
 
 let loading_finished =0;
 let intervalrefresh;
+let video_firsttime =0;
 const imagestaggdelay = 700;
 
 var myFullpage = new fullpage('#fullpage', {
-    sectionsColor: ['#F0EBDB', '#0A3CD1', '#E4F87A','#E4F87A', '#0A3CD1'],
+    sectionsColor: ['#0A3CD1', '#0A3CD1', '#E4F87A','#E4F87A', '#0A3CD1'],
     anchors: ['firstPage', 'secondPage', '3rdPage','4thPage','5thPage'],
     navigation: true,
     navigationPosition: 'right',
     navigationTooltips: ['what we do', 'atom&bits', 'about us','what we experienced','contact'],
     afterLoad: function (origin, destination, direction) {
-        if (destination.index == 0 && loading_finished == 1) {
-            keywords_in_animation_after.play(); //0번페이지 로딩 (keywords)
+
+        if (destination.index == 0 &&loading_finished ==1) {
+            aboutus_in_animation.play();
         }
         if (destination.index == 1) {
-            aboutus_in_animation.play();//1번페이지 로딩 (aboutus)
-        }
+          if(video_firsttime==0){
+            video_in_animation.play();
+            keywords_in_animation.play();
+            video_firsttime =1;
+          }
+          else {
+            keywords_in_animation_after.play();
+          }
+      }
         if (destination.index == 2) {}
         if (destination.index == 3) {
           randompicturepsotion();
@@ -28,13 +37,14 @@ var myFullpage = new fullpage('#fullpage', {
         }
     },
     onLeave: function (origin, destination, dirction) {
-        if (origin.index == 0) {
-            loading_finished = 1;
-            keywords_out_animation.play();
+      if (origin.index == 0) {
+        aboutus_out_animation.play();
+        loading_finished = 1;
+    }  
+      if (origin.index == 1) {
+        keywords_out_animation.play();
         }
-        if (origin.index == 1) {
-            aboutus_out_animation.play();
-        }
+      
         if(origin.index ==3)
         {
           clearInterval(intervalrefresh);
@@ -123,7 +133,8 @@ var video_in_animation = anime({
   translateY:[200,0],
   opacity: [0,1],
   duration: 500,
-  delay: anime.stagger(500)
+  delay: anime.stagger(500),
+  autoplay:false
 });
 
 
@@ -147,7 +158,7 @@ var keywords_out_animation = anime.timeline({loop: false,autoplay:false}) //사�
 });
 
 
-var keywords_in_animation = anime.timeline({loop: false})
+var keywords_in_animation = anime.timeline({loop: false,autoplay:false})
   .add({
     targets: ['.keywords .letter-wrapper','.videx-wrap'],
     opacity: ml4.opacityIn,
@@ -173,7 +184,7 @@ var aboutus_out_animation = anime({ //destination index1, aboutus out 애니메�
 //  color: ['rgba(0,0,0,1)','rgba(0, 0, 0, 0)'],
   easing: 'easeOutQuad',
   duration: 300,
-  autoplay: false,
+  autoplay: true,
   opacity: [1,0],
   delay: anime.stagger(50)
 });
@@ -184,7 +195,7 @@ var aboutus_in_animation = anime({ //destination index1, aboutus in 애니메이
   easing: 'easeInQuad',
   duration: 500,
 //  color: 'rgba(0, 0, 0, 1)',
-  autoplay: false,
+  autoplay: true,
   delay: anime.stagger(200)
 });
 

@@ -49,6 +49,9 @@ html{
     font-weight: normal;
     font-size: 3rem;
     line-height: 4.5rem;
+
+    text-align: justify;
+    word-break: keep-all;    
     color: white;
     
 }
@@ -59,8 +62,10 @@ html{
     font-family: Noto Sans KR;
     font-style: normal;
     font-weight: 400;
-    font-size: 2.7rem;
-    line-height: 4.5rem;    
+    font-size: 2.8rem;
+    line-height: 5rem;
+    text-align: justify;
+    word-break: keep-all;    
     color: white;
 }
 .aboutus-contents{
@@ -322,7 +327,7 @@ font-size: 3.7rem;
     font-family: Aldrich;
     font-style: normal;
     font-weight: normal;
-    font-size: 5rem;
+    font-size: 5.5rem;
 }
 .links-for-contact{
     margin-top: 8rem;
@@ -544,7 +549,7 @@ font-size: 1.8rem;
 }
 .contact{
     margin-top: 1.5rem;
-    font-size: 2.5rem;
+    font-size: 3rem;
 }
 .links-for-contact
 {

@@ -63,16 +63,6 @@ canvas{
   border: 1px solid #E4F87A;
 }
 
-.square {
-  height: 100%;
-  width: 100%;
-  background-color: #F0EBDB;
-  position: absolute;
-  left:0;
-  top:100%;
-  z-index: 1000;
-}
-
 @media (max-width: 768px) {
   html {
       font-size: 6px;
