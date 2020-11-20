@@ -15,7 +15,7 @@ const mouseClickAnimation =()=>{
         var mql = window.matchMedia("screen and (max-width: 768px)");
         if (mql.matches) {
             anime({
-                targets: 'everthing',
+                targets: everthing,
                 // translateY : -document.documentElement.clientHeight,
                 translateY: window.innerHeight,
                 easing: 'easeInQuint',
