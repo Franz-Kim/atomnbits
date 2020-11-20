@@ -89,7 +89,11 @@ function FirstmouseOver() {
  var letters= document.getElementsByClassName("letters-1")[0];
  letters.style.background= 'rgba(10,60,209,0.77)';
  letters.style.color='rgba(228,248,122,1)';
- letters.style.border = '4px solid rgba(228,248,122,1)';
+ if(mql.matches){
+ letters.style.border = '2px solid rgba(228,248,122,1)';}
+ else{
+  letters.style.border = '4px solid rgba(228,248,122,1)';
+ }
  SecondmouseOut();
  ThirdmouseOut();
 }
@@ -107,7 +111,11 @@ function SecondmouseOver() {
  var letters= document.getElementsByClassName("letters-2")[0];
  letters.style.background= 'rgba(10,60,209,0.77)';
  letters.style.color='rgba(228,248,122,1)';
- letters.style.border = '4px solid rgba(228,248,122,1)';
+ if(mql.matches){
+  letters.style.border = '2px solid rgba(228,248,122,1)';}
+  else{
+   letters.style.border = '4px solid rgba(228,248,122,1)';
+  }
 
 
  FirstmouseOut();
@@ -127,7 +135,11 @@ function ThirdmouseOver() {
  var letters= document.getElementsByClassName("letters-3")[0];
  letters.style.background= 'rgba(10,60,209,0.77)';
  letters.style.color='rgba(228,248,122,1)';
- letters.style.border = '4px solid rgba(228,248,122,1)';
+ if(mql.matches){
+  letters.style.border = '2px solid rgba(228,248,122,1)';}
+  else{
+   letters.style.border = '4px solid rgba(228,248,122,1)';
+  }
  FirstmouseOut();
  SecondmouseOut();
 }

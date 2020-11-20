@@ -79,6 +79,9 @@ canvas{
   html {
       font-size: 6px;
   }
+  .startbutton{
+    border: 2px solid #E4F87A;
+  }
 
 
 
