@@ -447,21 +447,21 @@ font-size: 3.7rem;
         position: absolute;
         width: auto;
         margin: 0 13%;
-        top:10%;
+        top:7%;
         
     }
 
 #aboutus-contents-en{
    /* margin-top: 5rem;*/
-    font-size: 1.5rem;
-    line-height: 2.5rem;
+    font-size: 1.3rem;
+    line-height: 2.3rem;
     text-align: justify;
     
 }
 #aboutus-contents-kr{
     margin-top: 6rem;
-    font-size: 1.5rem;
-    line-height: 2.7rem;    
+    font-size: 1.3rem;
+    line-height: 2.5rem;    
     text-align: justify;
 
 }
@@ -486,7 +486,7 @@ font-size: 3.7rem;
 .members-title {
     width:fit-content;
     font-size: 4rem;
-    margin-top:15%;
+    margin-top:10%;
 
     font-family: Aldrich;
     font-style: normal;
@@ -517,11 +517,12 @@ font-size: 3.7rem;
 }
 .biography{
     margin-top: 1rem;
-    line-height: 2rem;
+    font-size: 1.3rem;
+    line-height: 1.7rem;
 }
 
 .image {
-    margin-top: 4rem;
+    margin-top: 7%;
     width: 100px;
     height: 100px;
     margin-bottom: 1rem;
@@ -577,7 +578,7 @@ font-size: 1.6rem;
 }
 
 .footer {
-    font-size: 0.7rem;
+    font-size: 0.85rem;
 }
 
     /*
