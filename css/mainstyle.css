@@ -353,7 +353,7 @@ font-size: 3.55rem;
 
     border-top: 1px solid rgba(255,255,255,0.5);
 }
-@media (max-height: 700px){
+@media (max-height: 800px){
 
     .about-us-wrapper{
         position: relative;
