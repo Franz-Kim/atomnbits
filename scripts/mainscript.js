@@ -10,8 +10,9 @@ var mql = window.matchMedia("screen and (max-width: 768px)");
 setTimeout(function () {
   var laodingpage= document.getElementsByClassName('loading');
   laodingpage[0].style.display = 'none';
+  document.getElementById('fullpage').style.display = 'inline-block';
 
-}, 200);
+}, 300);
 
 
 
