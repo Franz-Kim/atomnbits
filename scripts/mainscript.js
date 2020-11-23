@@ -6,6 +6,16 @@ const imagestaggdelay = 700;
 
 var mql = window.matchMedia("screen and (max-width: 768px)");
 
+
+setTimeout(function () {
+  var laodingpage= document.getElementsByClassName('loading');
+  laodingpage[0].style.display = 'none';
+
+}, 200);
+
+
+
+
 var myFullpage = new fullpage('#fullpage', {
     sectionsColor: ['#0A3CD1', '#0A3CD1', '#E4F87A','#E4F87A', '#0A3CD1'],
     anchors: ['firstPage', 'secondPage', '3rdPage','4thPage','5thPage'],

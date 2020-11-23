@@ -2,6 +2,11 @@ html{
     font-size: 10px;
 }
 
+.loading{
+    background-color: #0A3CD1;
+    width: 100%;
+    height: 100%;
+}
 
 /*about us css*/
 .about-us-wrapper{
