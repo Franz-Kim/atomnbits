@@ -38,7 +38,7 @@ startbuttone.addEventListener('click', mouseClickAnimation)
 
 
 
-setTimeout(function () {
+setTimeout(function () { ///자동 전환
     anime({
         // targets: '.square',
         targets: everthing,
@@ -64,4 +64,4 @@ setTimeout(function () {
         window.location.href = "main.html";
     }, 1100);
 
-}, 8000);
+}, 10000);
