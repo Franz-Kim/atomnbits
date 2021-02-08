@@ -258,6 +258,14 @@ line-height: 4rem;
     text-align: right;
 
 }
+
+.personal-site a{
+    text-decoration: none;
+    color: inherit;
+}
+.personal-site a:hover{
+    text-decoration: underline;
+}
 .shortcut-icon{
     height: 1.5rem;
 }
