@@ -76,7 +76,7 @@ if(mql.matches)
 {document.querySelector("#firstvideo > source").src = "/resources/videos/Horizontal_kinetic.mp4";
 document.querySelector("#secondvideo > source").src = "/resources/videos/Horizontal_immersive.mp4";
 document.querySelector("#thirdvideo > source").src = "/resources/videos/Horizontal_interactive.mp4";
-document.querySelector("#secondgardenvid > source").src="/resources/videos/SecondGarden_Web";
+document.querySelector("#secondgardenvid > source").src="/resources/videos/SecondGarden_Web.mp4";
 
 document.querySelector("#firstvideo").poster="/resources/kineticThumbnail.png";
 document.querySelector("#secondvideo").poster="/resources/immersiveThumbnail.png";
