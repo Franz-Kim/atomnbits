@@ -449,6 +449,26 @@ font-size: 3.55rem;
     line-height: 2rem;
 }
 
+/*works */
+
+
+.worktitle{
+    margin: 0 5%;
+    font-family: Sen;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 2rem;
+    color: #0B36BC;
+}
+.workexplain{
+    margin: 0 5%;
+    font-family: Sen;
+font-style: normal;
+font-weight: normal;
+font-size: 1.5rem;
+color: #0B36BC;
+}
+
    
  
 
@@ -623,6 +643,33 @@ font-size: 3.55rem;
 }
 .personal-site{
 }
+
+/*works */
+
+#secondgardenvid{
+    width: 100vw;
+    margin: 1rem 0rem;
+    margin-left: -11vw;
+}
+.worktitle{
+    font-family: Sen;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.5rem;
+    color: #0B36BC;
+}
+.workexplain{
+    font-family: Sen;
+font-style: normal;
+font-weight: normal;
+font-size: 1rem;
+color: #0B36BC;
+}
+.worktitle a{
+    text-decoration: none;
+    color: inherit;
+}
+
 
 /*whatwe experienced*/
 .section2-2-wrapper{
