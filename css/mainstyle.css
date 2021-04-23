@@ -269,6 +269,31 @@ line-height: 4rem;
 .shortcut-icon{
     height: 1.5rem;
 }
+/*works */
+
+#secondgardenvid{
+    width: 80%;
+    margin: 2rem 10%;
+}
+.worktitle{
+    font-family: Sen;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 2.5rem;
+    color: #0B36BC;
+}
+.workexplain{
+    font-family: Sen;
+font-style: normal;
+font-weight: normal;
+font-size: 1.5rem;
+color: #0B36BC;
+}
+.worktitle a{
+    text-decoration: none;
+    color: inherit;
+}
+
 
 
 /*what-we-experienced*/
@@ -309,6 +334,7 @@ line-height: 4rem;
 }
 .ex-img{
     border: 8px solid rgba(10, 60, 209, 1);
+    
 }
 
 

@@ -18,11 +18,11 @@ setTimeout(function () {
 
 
 var myFullpage = new fullpage('#fullpage', {
-    sectionsColor: ['#0A3CD1', '#0A3CD1', '#E4F87A','#E4F87A', '#0A3CD1'],
-    anchors: ['firstPage', 'secondPage', '3rdPage','4thPage','5thPage'],
+    sectionsColor: ['#0A3CD1', '#0A3CD1', '#E4F87A','#E4F87A','#E4F87A', '#0A3CD1'],
+    anchors: ['firstPage', 'secondPage', '3rdPage','4thPage','5thPage','6thPage'],
     navigation: true,
     navigationPosition: 'right',
-    navigationTooltips: ['atom&bits', 'what we do', 'members','what we experienced','contact'],
+    navigationTooltips: ['atom&bits', 'what we do', 'members','works','what we experienced','contact'],
     afterLoad: function (origin, destination, direction) {
 
         if (destination.index == 0 &&loading_finished ==1) {
@@ -43,7 +43,10 @@ var myFullpage = new fullpage('#fullpage', {
           }
       }
         if (destination.index == 2) {}
-        if (destination.index == 3) {
+        if (destination.index ==3){
+          document.getElementById("secondgardenvid").play();
+        }
+        if (destination.index == 4) {
           randompicturepsotion();
           experience_in_animation.restart();
 
@@ -263,10 +266,10 @@ function randompicturepsotion() {
     }
     let randomscale;
     if(mql.matches){
-      randomscale = Math.random() * (0.5 - 0.2) + 0.2;
+      randomscale = (Math.random() * (0.5 - 0.2) + 0.2);
     }
     else{
-      randomscale = Math.random() * (1 - 0.5) + 0.5;  
+      randomscale = (Math.random() * (1 - 0.5) + 0.5);  
     }
     let picturewidth = pictureorigin[i].width*randomscale;
     let pictureheight = pictureorigin[i].height*randomscale;
